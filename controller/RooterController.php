@@ -3,10 +3,10 @@ session_start();
 
 use ABI\MainController\AdminController;
 use ABI\MainController\MainController;
-use ABI\MainController\Dashboard;
+use ABI\MainController\DashboardController;
 require('./controller/MainController.php');
 require('./controller/AdminController.php');
-require('./controller/Dashboard.php');
+require('./controller/DashboardController.php');
 
 if (isset($_GET['action'])) {
 
@@ -42,14 +42,14 @@ if (isset($_GET['action'])) {
                                                       
                if(isset($_POST['emailLog'])&& isset($_POST['passwordLog']))
                {
-                     Dashboard::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
+                     DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
                }
                elseif(!empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
                      !empty($_POST['email'])&&!empty($_POST['password'])&&!empty($_POST['role']))
                {
                   $pass= htmlentities($_POST['password']);
                   $pass= password_hash($pass, PASSWORD_DEFAULT);
-                  Dashboard::addUserDashboard(htmlentities($_POST['first_name']),
+                  DashboardController::addUserDashboard(htmlentities($_POST['first_name']),
                                              htmlentities($_POST['last_name']),
                                              htmlentities($_POST['email']),
                                              $pass,

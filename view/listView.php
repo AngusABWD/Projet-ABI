@@ -1,8 +1,8 @@
 <?php
 
-use ABI\MainController\Dashboard;
+use ABI\MainController\DashboardController;
 
-$results=Dashboard::viewUsers();
+$results=DashboardController::viewUsers();
     if(!empty($results))
                 {
 ?>

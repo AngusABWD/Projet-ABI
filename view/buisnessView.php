@@ -1,10 +1,10 @@
 <?php
 
-use \ABI\MainController\Auth;
+use \ABI\MainController\AuthController;
 
 $title='Gestion commerciale';
 
-$role=Auth::checkRoleCom();
+$role=AuthController::checkRoleCom();
 ob_start(); 
 ?>
 <div class="row navbar navbar-expand-sm mx-0 px-0">

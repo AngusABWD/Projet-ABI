@@ -2,14 +2,14 @@
 
 
 use ABI\MainController\MainController;
-use \ABI\MainController\Auth;
+use \ABI\MainController\AuthController;
 
 
 
 $title='Tableau de bord';
 
 
-Auth::checkRoleAdmin();
+AuthController::checkRoleAdmin();
 $first_name=$_SESSION['first_name'];
 $last_name=$_SESSION['last_name'];
 

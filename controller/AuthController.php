@@ -5,7 +5,7 @@ use \ABI\model\Database;
 
 
 
-class Auth
+class AuthController
 
 {
     public $pdo;
@@ -61,7 +61,7 @@ class Auth
     public static function checkRoleAdmin():string
     {
         $data= new Database('abi');
-        $auth= new Auth($data->getPDO());
+        $auth= new AuthController($data->getPDO());
         $user=$auth->user();
 
         if($user!==null&& $user[5]==='Administrateur')
@@ -84,7 +84,7 @@ class Auth
     public static function checkRoleCom():string
     {
         $data= new Database('abi');
-        $auth= new Auth($data->getPDO());
+        $auth= new AuthController($data->getPDO());
         $user=$auth->user();
 
         if ($user!==null&& ($user['role']==='Commercial'|| $user['role']==='Administrateur'))

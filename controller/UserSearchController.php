@@ -1,10 +1,10 @@
 <?php
 namespace ABI\MainController;
 use \ABI\model\Database;
-require('controller/Auth.php');
+require('../controller/AuthController.php');
 
 
-class Dashboard
+class UserSearchController
 {
     public static function viewUsers()
     {
@@ -17,7 +17,7 @@ class Dashboard
     public static function checkUser($email, $password)
     {
         $data= new Database('abi');
-        $auth= new Auth($data->getPDO());
+        $auth= new AuthController($data->getPDO());
 
         $result=$auth->login($email,$password);
         
