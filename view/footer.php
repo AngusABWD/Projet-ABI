@@ -5,9 +5,6 @@
                         </div>
                         <div class="navbar col-md-4 col-12 text-center">
                             <ul class="navbar-nav text-center">
-                                <li class="footer-link nav-item">
-                                    <a href="#"class='nav-link'>Notre Charte</a>
-                                </li>
                                 <li class="footer-link nav-item <?php if ($_SERVER['SCRIPT_NAME']==='/contact.php'):?> active <?php endif?>">
                                     <a href="./contact.php" class='nav-link'>Contactez nous</a>
                                 </li>

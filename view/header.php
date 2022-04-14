@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,13 +49,13 @@
                         <a class="nav-link" href="../index.php?action=home">Accueil</a>
                     </li>
                     <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=ABIgroup'):?> active <?php endif?>">
-                        <a class="nav-link" href="../index.php?action=ABIgroup">Groupe ABI</a>
+                        <a class="nav-link" href="../index.php?action=ABIgroup">La Société</a>
                     </li>
                     <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=actuality'):?> active <?php endif?>">
-                        <a class="nav-link" href="../index.php?action=actuality">Actualité</a>
+                        <a class="nav-link" href="../index.php?action=actuality">Actualités</a>
                     </li>
                     <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=offer'):?> active <?php endif?>">
-                        <a class="nav-link" href="../index.php?action=offer">Nos offres</a>
+                        <a class="nav-link" href="../index.php?action=offer">Nos Services</a>
                     </li>
                     <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=contact'):?> active <?php endif?>">
                         <a class="nav-link" href="../index.php?action=contact">Contact</a>
