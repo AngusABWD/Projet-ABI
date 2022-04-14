@@ -47,11 +47,6 @@ class AuthController
             {
                 session_start();
             }
-            var_dump($user);
-                $_SESSION['id']= $user[0];
-                echo $user[0];
-                $_SESSION['first_name']=$user[1];
-                $_SESSION['last_name']=$user[2];
             return $user;
             
         }
