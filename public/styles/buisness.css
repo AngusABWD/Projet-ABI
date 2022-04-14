@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+    background: url('../IMG/background.jpg') no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+   
+   
+
+}
+
+
+section
+{
+    background:  #fff;
+    min-height: 800px;
+}
+footer
+{
+    border: 2px solid;
+
+}
+.footer-link a
+{
+    color: black;
+}
+.navbar-item a
+{
+    color: #004279;
+    font-weight: bold;
+    
+}
+.lateral img
+{
+    border-radius: 25%;
+    width: 100px;
+    height: 100px;
+}
+.lateral img:hover
+{
+   
+   border-radius: 25%;
+   transform: translateX(3px);
+   transition: .2s ease;
+}
+.invisible
+{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+.client-view
+{
+    box-shadow: 2px 1px 5px #787879;
+    border-radius: 5px;
+}
+table
+{
+    font-size: 16px;
+}
+table th{
+    color: #747474;
+    background-color: #ECECEC;
+   
+}
+h3
+{
+    color: #E78810;
+    
+}
+label
+{
+    color: #004279;
+    font-weight: 600;
+}
+label:hover{
+    color: #E78810 ;
+    transform: translateX(3px);
+    transition: .2s ease;
+
+}

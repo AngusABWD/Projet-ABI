@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body{
+    box-sizing: border-box;
+    background: url('../IMG/background.jpg') no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+   
+   
+
+}
+
+header
+{
+    background: #fff;
+    height: 200px;
+}
+.bonjour a:hover
+{
+    color: #E78810 !important;
+    transform: translateX(3px) !important;
+    transition: .2s ease !important;
+}
+.bonjour a{
+    color: #004279;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.bonjour h4{
+    color: #004279;
+    font-weight: bold;
+}
+section
+{
+    background:  #fff;
+}
+footer
+{
+    border: 2px solid;
+
+}
+.footer-link a
+{
+    color: black;
+}
+.gestion
+{
+  
+    height:100px;
+    width:200px;
+   
+}
+header a
+{
+    color: #004279;
+    font-size: 20px;
+
+}
+header a:hover
+{
+    color: #E78810 !important;
+    transform: translateX(3px) !important;
+    transition: .2s ease !important;
+    
+}
+header img:hover
+{
+    box-shadow: 3px 2px 10px #2C2D2F;
+   border-radius: 15%;
+    transform: translateX(3px);
+    transition: .2s ease;
+}
+section
+{
+    min-height: 400px;
+}
+.logout
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.modif img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+   
+}
+.modif a{
+    color: #004279;
+    font-size: 20px;
+}
+.modif img:hover
+{
+    box-shadow: 3px 2px 10px #2C2D2F;
+   
+    transform: translateX(3px);
+    transition: .2s ease;
+}
+.modif a:hover{
+    color: #E78810 ;
+    transform: translateX(3px);
+    transition: .2s ease;
+
+}
+table th{
+    color: #747474;
+    background-color: #ECECEC
+}
+.formAdd
+{
+    background-color: #ECECEC;
+    box-shadow: 3px 2px 10px #2C2D2F;
+
+}
+.formAdd label{
+    font-size: 18px;
+    color: #004279;
+    font-weight: 800;
+}
