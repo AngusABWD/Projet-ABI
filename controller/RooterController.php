@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-use ABI\MainController\Buisness;
+use ABI\MainController\AdminController;
 use ABI\MainController\MainController;
 use ABI\MainController\Dashboard;
 require('./controller/MainController.php');
-require('./controller/Buisness.php');
+require('./controller/AdminController.php');
 require('./controller/Dashboard.php');
 
 if (isset($_GET['action'])) {
@@ -72,7 +72,7 @@ if (isset($_GET['action'])) {
                &&!empty($_POST['code_postale'])&&!empty($_POST['ville'])
                &&!empty($_POST['effectif'])&&!empty($_POST['telephone'])))
             {
-               Buisness::addClientBuisness(  htmlentities($_POST['secteur']),
+               AdminController::addClientAdmin(  htmlentities($_POST['secteur']),
                                              htmlentities($_POST['raison_sociale']),
                                              htmlentities($_POST['adresse']),
                                              htmlentities($_POST['code_postale']),

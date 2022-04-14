@@ -1,12 +1,12 @@
 <?php
 
-use \ABI\MainController\BuisnessSearch;
+use \ABI\MainController\ClientSearchController;
 
-require'../controller/BuisnessSearch.php';
+require'../controller/ClientSearchController.php';
 
 if(!empty($_GET['search'])){
 
-     $results=BuisnessSearch::showClientBuisness(htmlentities($_GET['search']));
+     $results=ClientSearchController::showClientAdmin(htmlentities($_GET['search']));
     
     
     if(!empty($results))

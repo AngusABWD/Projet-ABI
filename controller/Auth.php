@@ -81,7 +81,7 @@ class Auth
         }
     }
 
-    public static function checkRoleBuisness():string
+    public static function checkRoleCom():string
     {
         $data= new Database('abi');
         $auth= new Auth($data->getPDO());

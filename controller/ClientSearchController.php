@@ -8,7 +8,7 @@ use ABI\model\Database;
 use Exception;
 
 require ('../model/ClientsSearch.php');
-class BuisnessSearch
+class ClientSearchController
 {
     public static function viewClients()
     {
@@ -16,7 +16,7 @@ class BuisnessSearch
         return $results->getClients();
        
     }
-    public static function addClientBuisness($secteur, $raison_sociale, $adresse, $code_postale, $ville, $effectif, $telephone)
+    public static function addClientAdmin($secteur, $raison_sociale, $adresse, $code_postale, $ville, $effectif, $telephone)
     {
         $results= new Clients('abi');
         $sect=new Secteur('abi');
@@ -44,7 +44,7 @@ class BuisnessSearch
         }
         
     }
-    public static function showClientBuisness($value)
+    public static function showClientAdmin($value)
     {
         try
         {

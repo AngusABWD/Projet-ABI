@@ -1,5 +1,5 @@
 <?php   
-use ABI\MainController\Buisness;
+use ABI\MainController\AdminController;
 ?>
 <div class="row w-75 p-4 mx-auto formAdd">
        <div class="col">
@@ -12,7 +12,7 @@ use ABI\MainController\Buisness;
                     <select name="secteur" id='secteur'class="form-control">
                     <?php
 
-                        Buisness::viewSecteurs();
+                        AdminController::viewSecteurs();
                     ?>
 
                     </select> 

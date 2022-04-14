@@ -7,7 +7,7 @@ use ABI\model\Secteur;
 use ABI\model\Database;
 use Exception;
 require ('./model/Client.php');
-class Buisness
+class AdminController
 {
     public static function viewClients()
     {
@@ -15,7 +15,7 @@ class Buisness
         return $results->getClients();
        
     }
-    public static function addClientBuisness($secteur, $raison_sociale, $adresse, $code_postale, $ville, $effectif, $telephone)
+    public static function addClientAdmin($secteur, $raison_sociale, $adresse, $code_postale, $ville, $effectif, $telephone)
     {
         $results= new Client('abi');
         $sect=new Secteur('abi');
@@ -43,7 +43,7 @@ class Buisness
         }
         
     }
-    public static function showClientBuisness($value)
+    public static function showClientAdmin($value)
     {
         try
         {

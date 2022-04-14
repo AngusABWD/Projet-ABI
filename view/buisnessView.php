@@ -4,7 +4,7 @@ use \ABI\MainController\Auth;
 
 $title='Gestion commerciale';
 
-$role=Auth::checkRoleBuisness();
+$role=Auth::checkRoleCom();
 ob_start(); 
 ?>
 <div class="row navbar navbar-expand-sm mx-0 px-0">

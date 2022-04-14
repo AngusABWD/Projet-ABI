@@ -26,7 +26,7 @@ function showUser(str) {
           document.getElementById("result").innerHTML = this.responseText;
         }
       };
-      xmlhttp.open("GET","./model/clientSearch.php?search="+str,true);
+      xmlhttp.open("GET","./model/ClientSearch.php?search="+str,true);
       xmlhttp.send();
     }
   }

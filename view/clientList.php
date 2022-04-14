@@ -1,8 +1,8 @@
 <?php
 
-use ABI\MainController\Buisness;
+use ABI\MainController\AdminController;
 
-$results=Buisness::viewClients();
+$results=AdminController::viewClients();
     if(!empty($results))
                 {
 ?>
