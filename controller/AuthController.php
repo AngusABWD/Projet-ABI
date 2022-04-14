@@ -47,6 +47,7 @@ class AuthController
             {
                 session_start();
             }
+       
             return $user;
             
         }
