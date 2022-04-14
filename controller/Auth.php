@@ -1,5 +1,5 @@
 <?php
-namespace ABI\controller;
+namespace ABI\MainController;
 use \PDO;
 use \ABI\model\Database;
 

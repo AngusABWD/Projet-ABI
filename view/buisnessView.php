@@ -1,6 +1,6 @@
 <?php
 
-use \ABI\controller\Auth;
+use \ABI\MainController\Auth;
 
 $title='Gestion commerciale';
 

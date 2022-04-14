@@ -1,8 +1,8 @@
 <?php
 
-use \ABI\controller\BuisnessSearch;
+use \ABI\MainController\BuisnessSearch;
 
-require '../controller/BuisnessSearch.php';
+require'../controller/BuisnessSearch.php';
 
 if(!empty($_GET['search'])){
 

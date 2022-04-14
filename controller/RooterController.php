@@ -1,40 +1,40 @@
 <?php
 session_start();
 
-use ABI\controller\Buisness;
-use ABI\controller\Controller;
-use ABI\controller\Dashboard;
-require ('./controller/Controller.php');
-require ('./controller/Buisness.php');
-require ('./controller/Dashboard.php');
+use ABI\MainController\Buisness;
+use ABI\MainController\MainController;
+use ABI\MainController\Dashboard;
+require('./controller/MainController.php');
+require('./controller/Buisness.php');
+require('./controller/Dashboard.php');
 
 if (isset($_GET['action'])) {
 
 
         if ($_GET['action']=='home')
         {
-            Controller::viewPage('./view/indexView.php');
+            MainController::viewPage('./view/indexView.php');
         }
         elseif($_GET['action']=='ABIgroup')
         {
-            Controller::viewPage('./view/groupView.php');
+            MainController::viewPage('./view/groupView.php');
         }
         elseif($_GET['action']=='actuality')
         {
-            Controller::viewPage('./view/actualityView.php');
+            MainController::viewPage('./view/actualityView.php');
         }
         elseif($_GET['action']=='offer')
         {
-            Controller::viewPage('./view/offerView.php');
+            MainController::viewPage('./view/offerView.php');
         }
         elseif($_GET['action']=='contact')
         {
-            Controller::viewPage('./view/contactView.php');
+            MainController::viewPage('./view/contactView.php');
         }
         elseif($_GET['action']=='connexion')
         
         { 
-            Controller::viewPage('./view/connexionView.php');
+            MainController::viewPage('./view/connexionView.php');
            
         }
         elseif($_GET['action']=='dashboard')
@@ -58,13 +58,13 @@ if (isset($_GET['action'])) {
               
                else
                {
-               Controller::viewPage('./view/dashboardView.php');
+               MainController::viewPage('./view/dashboardView.php');
                }
 
         }
          elseif ($_GET['action']=='logOut')
          {
-            Controller::logOut();
+            MainController::logOut();
          }
          elseif($_GET['action']=='buisness')
          {
@@ -82,16 +82,16 @@ if (isset($_GET['action'])) {
             }
             else
             {
-                Controller::viewPage('./view/buisnessView.php');
+                MainController::viewPage('./view/buisnessView.php');
             }
          }
           
         else
         {
         
-           Controller::viewPage('./view/indexView.php');
+           MainController::viewPage('./view/indexView.php');
         }
 
     } else {
-        Controller::viewPage('./view/indexView.php');
+        MainController::viewPage('./view/indexView.php');
     }

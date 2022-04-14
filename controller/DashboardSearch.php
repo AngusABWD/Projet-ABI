@@ -1,5 +1,5 @@
 <?php
-namespace ABI\controller;
+namespace ABI\MainController;
 use \ABI\model\Database;
 require('../controller/Auth.php');
 

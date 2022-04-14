@@ -1,5 +1,5 @@
 <?php   
-use ABI\controller\Buisness;
+use ABI\MainController\Buisness;
 ?>
 <div class="row w-75 p-4 mx-auto formAdd">
        <div class="col">

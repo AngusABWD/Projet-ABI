@@ -1,7 +1,7 @@
 <?php
-namespace ABI\controller;
+namespace ABI\MainController;
 
-class Controller
+class MainController
 {
     
 

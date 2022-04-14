@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ABI\controller;
+namespace ABI\MainController;
 use ABI\model\Client;
 use ABI\model\Secteur;
 use ABI\model\Database;

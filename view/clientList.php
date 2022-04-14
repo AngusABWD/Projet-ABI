@@ -1,6 +1,6 @@
 <?php
 
-use ABI\controller\Buisness;
+use ABI\MainController\Buisness;
 
 $results=Buisness::viewClients();
     if(!empty($results))

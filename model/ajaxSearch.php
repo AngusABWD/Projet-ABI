@@ -1,9 +1,9 @@
 <?php
 
-use ABI\controller\DashboardSearch;
+use ABI\MainController\DashboardSearch;
 
-require '../controller/Controller.php';
-require '../controller/DashboardSearch.php';
+require'../controller/MainController.php';
+require'../controller/DashboardSearch.php';
 require './Database.php';
 
 

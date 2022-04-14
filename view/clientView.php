@@ -1,5 +1,5 @@
 <?php
-use \ABI\controller\Controller;
+use \ABI\MainController\MainController;
 
 ?>
 <div class="col client-view my-4 ml-2 mr-4">
@@ -20,22 +20,22 @@ if(isset($_GET['action2']))
 
                     if($_GET['action2']==='clientList')
                     {
-                        Controller::viewPage('./view/clientList.php');
+                        MainController::viewPage('./view/clientList.php');
                     }
                             
                     elseif($_GET['action2']==='searchClient')
                     {
-                        Controller::viewPage('./view/searchClientView.php');
+                        MainController::viewPage('./view/searchClientView.php');
                                 
                     }
                     elseif($_GET['action2']==='addClient')
                     {
-                        Controller::viewPage('./view/addClientView.php');
+                        MainController::viewPage('./view/addClientView.php');
                                 
                     }
                     elseif($_GET['action2']==='detailClient')
                     {
-                        Controller::viewPage('./view/detailClientView.php');
+                        MainController::viewPage('./view/detailClientView.php');
                                 
                     }
                    

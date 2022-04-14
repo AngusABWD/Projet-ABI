@@ -1,2 +1,2 @@
 <?php
-require('./controller/Router.php');
+require('controller/RooterController.php');

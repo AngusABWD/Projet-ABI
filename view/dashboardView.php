@@ -1,8 +1,8 @@
 <?php
 
 
-use ABI\controller\Controller;
-use \ABI\controller\Auth;
+use ABI\MainController\MainController;
+use \ABI\MainController\Auth;
 
 
 
@@ -96,18 +96,18 @@ ob_start();
 
                     if($_GET['action3']==='dashboardList')
                     {
-                        Controller::viewpage('./view/listView.php');
+                        MainController::viewpage('./view/listView.php');
                     }
                             
                 
                     elseif($_GET['action3']==='addUser')
                     {
-                        Controller::viewpage('./view/addUserView.php');
+                        MainController::viewpage('./view/addUserView.php');
                                 
                     }
                     elseif($_GET['action3']==='modifyUser')
                     {
-                        Controller::viewpage('./view/modifyUserView.php');
+                        MainController::viewpage('./view/modifyUserView.php');
                                 
                     }
                                             

@@ -1,6 +1,6 @@
 <?php
 
-use ABI\controller\Dashboard;
+use ABI\MainController\Dashboard;
 
 $results=Dashboard::viewUsers();
     if(!empty($results))
