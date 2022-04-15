@@ -6,9 +6,17 @@ namespace ABI\model;
 use Exception;
 use \PDO;
 
+/**
+ * Secteur
+ */
 class Secteur extends Database
 {
-
+    
+    /**
+     * getSecteurs
+     *
+     * @return void
+     */
     public static function getSecteurs()
     {
         try
@@ -22,7 +30,13 @@ class Secteur extends Database
         {
             die($e->getMessage());
         }
-    }
+    }    
+    /**
+     * getSecteur
+     *
+     * @param  mixed $secteur
+     * @return int
+     */
     public static function getSecteur(string $secteur):int
     {
         try
