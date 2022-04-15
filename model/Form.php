@@ -1,13 +1,29 @@
 <?php
 namespace ABI\model;
+/**
+ * Form
+ */
 class Form
-{
+{    
+    /**
+     * data
+     *
+     * @var mixed
+     */
     private $data;
     public function __contruct($data)
     {
         $this->data=$data;
     }
-
+    
+    /**
+     * input
+     *
+     * @param  mixed $type
+     * @param  mixed $name
+     * @param  mixed $label
+     * @return void
+     */
     public static function input($type, $name, $label)
     {
         return <<<HTML
@@ -18,7 +34,13 @@ class Form
         </div>
 HTML;
 
-    }
+    }    
+    /**
+     * submit
+     *
+     * @param  mixed $text
+     * @return void
+     */
     public static function submit($text)
     {
         return <<<HTML

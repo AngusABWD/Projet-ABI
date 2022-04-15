@@ -9,13 +9,30 @@ use Exception;
 require ('./model/Client.php');
 require ('./model/Secteur.php');
 class AdminController
-{
+{    
+    /**
+     * viewClients
+     *
+     * @return void
+     */
     public static function viewClients()
     {
         $results= new Client('abi');
         return $results->getClients();
        
-    }
+    }    
+    /**
+     * addClientAdmin
+     *
+     * @param  mixed $secteur
+     * @param  mixed $raison_sociale
+     * @param  mixed $adresse
+     * @param  mixed $code_postale
+     * @param  mixed $ville
+     * @param  mixed $effectif
+     * @param  mixed $telephone
+     * @return void
+     */
     public static function addClientAdmin($secteur, $raison_sociale, $adresse, $code_postale, $ville, $effectif, $telephone)
     {
         $results= new Client('abi');
@@ -25,7 +42,12 @@ class AdminController
         header('Location:./index.php?action=buisness&successAdd=true');
     
         return $result;
-    }
+    }    
+    /**
+     * viewSecteurs
+     *
+     * @return void
+     */
     public static function viewSecteurs()
     {
         try{
@@ -43,7 +65,13 @@ class AdminController
             die($e->getMessage());
         }
         
-    }
+    }    
+    /**
+     * showClientAdmin
+     *
+     * @param  mixed $value
+     * @return void
+     */
     public static function showClientAdmin($value)
     {
         try
