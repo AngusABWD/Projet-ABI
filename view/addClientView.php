@@ -1,6 +1,3 @@
-<?php   
-use ABI\MainController\AdminController;
-?>
 <div class="row w-75 p-4 mx-auto formAdd">
        <div class="col">
         <h3 class="text-center mb-4 p-4">Ajouter un client</h3>  
@@ -9,14 +6,13 @@ use ABI\MainController\AdminController;
                     <label for="secteur">
                         Secteur d'activité
                     </label>
-                    <select name="secteur" id='secteur'class="form-control">
-                    <?php
-
-                        AdminController::viewSecteurs();
-                    ?>
-
-                    </select> 
-
+                      <select  name="secteur" id='secteur' class="form-select" aria-label="Selecyion du secteur">
+                          <option selected>Secteurs</option>
+                          <option value="Agro Alimentaire">Agro Alimentaire</option>
+                          <option value="industriel">Industriel</option>
+                          <option value="Commercial">Commercial</option>
+                          <option value="Informatique">Informatique</option>
+                      </select> 
                     </div>
                 <div class="form-group">
                   <label for="raison_sociale">
