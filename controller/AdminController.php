@@ -7,6 +7,7 @@ use ABI\model\Secteur;
 use ABI\model\Database;
 use Exception;
 require ('./model/Client.php');
+require ('./model/Secteur.php');
 class AdminController
 {
     public static function viewClients()
