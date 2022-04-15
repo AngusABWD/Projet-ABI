@@ -5,6 +5,9 @@ use Exception;
 use \PDO;
 use User;
 
+/**
+ * Database
+ */
 class Database
 {
     protected $db_name;
@@ -14,7 +17,16 @@ class Database
     public static $pdo;
 
     protected static $database;
-
+    
+    /**
+     * __construct
+     *
+     * @param  mixed $db_name
+     * @param  mixed $db_user
+     * @param  mixed $db_pass
+     * @param  mixed $db_host
+     * @return void
+     */
     public function __construct($db_name, $db_user='root', $db_pass='', $db_host='localhost')
     {
         $this->db_name=$db_name;
@@ -22,7 +34,12 @@ class Database
         $this->db_pass=$db_pass;
         $this->db_host=$db_host;
     }
-
+    
+    /**
+     * getPDO
+     *
+     * @return PDO
+     */
     public static function getPDO(): PDO
     {
         try
@@ -41,7 +58,12 @@ class Database
         }   
     }
     
-    
+        
+    /**
+     * getUsers
+     *
+     * @return void
+     */
     public function getUsers ()
     {
         try
@@ -54,7 +76,13 @@ class Database
         {
             die($e->getMessage());
         }
-    }
+    }    
+    /**
+     * getUser
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function getUser(int $id)
     {
         try{
@@ -72,7 +100,14 @@ class Database
             die($e->getMessage()); 
         }
 
-    }
+    }    
+    /**
+     * updateUser
+     *
+     * @param  mixed $id
+     * @param  mixed $role
+     * @return void
+     */
     public function updateUser(int $id, string $role)
     {
         try
@@ -87,7 +122,13 @@ class Database
             die($e->getMessage());
         }
 
-    }
+    }    
+    /**
+     * deleteUser
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function deleteUser(int $id)
     {
         try
@@ -101,7 +142,17 @@ class Database
             die($e->getMessage());
         }
 
-    }
+    }    
+    /**
+     * addUser
+     *
+     * @param  mixed $first_name
+     * @param  mixed $last_name
+     * @param  mixed $email
+     * @param  mixed $password
+     * @param  mixed $role
+     * @return void
+     */
     public function addUser(string $first_name, string $last_name, string $email, string $password,string $role)
     {
         try
@@ -120,7 +171,13 @@ class Database
         {
             die($e->getMessage());
         }
-    }
+    }    
+    /**
+     * showUser
+     *
+     * @param  mixed $value
+     * @return void
+     */
     public function showUser(string $value)
     {
         try{
@@ -136,7 +193,13 @@ class Database
         {
             die($e->getMessage());
         }
-    }
+    }    
+    /**
+     * showClients
+     *
+     * @param  mixed $value
+     * @return void
+     */
     public function showClients($value)
     {
         try{
