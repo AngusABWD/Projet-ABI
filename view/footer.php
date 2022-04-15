@@ -5,11 +5,11 @@
                         </div>
                         <div class="navbar col-md-4 col-12 text-center">
                             <ul class="navbar-nav text-center">
-                                <li class="footer-link nav-item <?php if ($_SERVER['SCRIPT_NAME']==='/contact.php'):?> active <?php endif?>">
-                                    <a href="./contact.php" class='nav-link'>Contactez nous</a>
+                                <li class="footer-link nav-item <?php global $footerActive; if ($footerActive =='contactDev'):?>  active <?php endif?>">
+                                    <a href="../index.php?action=contactDev" class='nav-link'>Contactez nous</a>
                                 </li>
-                                <li class="footer-link nav-item">
-                                    <a href="#" class='nav-link'>Mentions légales</a>
+                                <li class="footer-link nav-item <?php global $footerActive; if ($footerActive =='mentions'):?>  active <?php endif?>">
+                                    <a href="../index.php?action=mentions" class='nav-link'>Mentions légales</a>
                                 </li>    
                             </ul>
 

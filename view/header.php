@@ -45,19 +45,19 @@
             <nav class="menu navbar navbar-expand d-none d-md-block">
                 <ul class="navbar-nav d-flex justify-content-around">
                     <!--Mettre la classe Active en place sur le Menu-->
-                <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=home'):?> active <?php endif?>">
+                <li class="nav-item <?php global $headerActive; if ($headerActive =='home'):?> active <?php endif?>">
                         <a class="nav-link" href="../index.php?action=home">Accueil</a>
                     </li>
-                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=ABIgroup'):?> active <?php endif?>">
+                    <li class="nav-item <?php global $headerActive; if ($headerActive =='ABIgroup'):?>  active <?php endif?>">
                         <a class="nav-link" href="../index.php?action=ABIgroup">La Société</a>
                     </li>
-                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=actuality'):?> active <?php endif?>">
+                    <li class="nav-item <?php global $headerActive; if ($headerActive =='actuality'):?>  active <?php endif?>">
                         <a class="nav-link" href="../index.php?action=actuality">Actualités</a>
                     </li>
-                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=offer'):?> active <?php endif?>">
+                    <li class="nav-item <?php global $headerActive; if ($headerActive =='offer'):?>  active <?php endif?>">
                         <a class="nav-link" href="../index.php?action=offer">Nos Services</a>
                     </li>
-                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=contact'):?> active <?php endif?>">
+                    <li class="nav-item <?php global $headerActive; if ($headerActive =='contact'):?>  active <?php endif?>">
                         <a class="nav-link" href="../index.php?action=contact">Contact</a>
                     </li>
                     <li class="nav-item espace-membre d-flex<?php if ($_SERVER['SCRIPT_NAME']==='./index.php?action=connexion'):?> active <?php endif?>">
