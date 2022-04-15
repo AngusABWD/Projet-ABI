@@ -5,10 +5,18 @@ use \PDO;
 use \Exception;
 require ('./model/Database.php');
 
+/**
+ * Client
+ */
 class Client extends Database
 {
 
-
+    
+    /**
+     * getClients
+     *
+     * @return void
+     */
     public function getClients()
     {
         try
@@ -22,7 +30,13 @@ class Client extends Database
             die($e->getMessage());
         }
 
-    }
+    }    
+    /**
+     * getClient
+     *
+     * @param  mixed $id_client
+     * @return void
+     */
     public static function getClient($id_client)
     {
         try
@@ -40,7 +54,19 @@ class Client extends Database
         {
             die($e->getMessage());
         }
-    }
+    }    
+    /**
+     * addClient
+     *
+     * @param  mixed $id_secteur
+     * @param  mixed $raison_sociale
+     * @param  mixed $adresse
+     * @param  mixed $code_postale
+     * @param  mixed $ville
+     * @param  mixed $effectif
+     * @param  mixed $telephone
+     * @return void
+     */
     public function addClient($id_secteur,$raison_sociale,$adresse,$code_postale,$ville,$effectif,$telephone)
     {
         try
