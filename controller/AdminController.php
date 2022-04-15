@@ -10,6 +10,7 @@ require ('./model/Client.php');
 /**
  * AdminController
  */
+require ('./model/Secteur.php');
 class AdminController
 {    
     /**
