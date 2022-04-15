@@ -7,10 +7,6 @@ use ABI\model\Secteur;
 use ABI\model\Database;
 use Exception;
 require ('./model/Client.php');
-/**
- * AdminController
- */
-=======
 require ('./model/Secteur.php');
 class AdminController
 {    
