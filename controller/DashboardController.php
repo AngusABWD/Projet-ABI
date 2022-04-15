@@ -4,8 +4,16 @@ use \ABI\model\Database;
 require('controller/AuthController.php');
 
 
+/**
+ * DashboardController
+ */
 class DashboardController
-{
+{    
+    /**
+     * viewUsers
+     *
+     * @return void
+     */
     public static function viewUsers()
     {
         $results= new Database('abi');
@@ -13,7 +21,14 @@ class DashboardController
     
        
     }
-    
+        
+    /**
+     * checkUser
+     *
+     * @param  mixed $email
+     * @param  mixed $password
+     * @return void
+     */
     public static function checkUser($email, $password)
     {
         $data= new Database('abi');
@@ -37,7 +52,17 @@ class DashboardController
         {
             header('Location:./index.php?action=connexion&error=true');
         }
-    }
+    }    
+    /**
+     * addUserDashboard
+     *
+     * @param  mixed $first_name
+     * @param  mixed $last_name
+     * @param  mixed $email
+     * @param  mixed $password
+     * @param  mixed $role
+     * @return void
+     */
     public static function addUserDashboard($first_name, $last_name, $email, $password, $role)
     {
         $results= new Database('abi');
@@ -48,7 +73,13 @@ class DashboardController
     }
 
 
-    
+        
+    /**
+     * modifyUserDashboard
+     *
+     * @param  mixed $value
+     * @return void
+     */
     public static function modifyUserDashboard($value)
     {
         $results= new Database('abi');
