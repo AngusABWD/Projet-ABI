@@ -56,7 +56,7 @@ if (isset($_GET['action'])) {
                                                       
                if(isset($_POST['emailLog'])&& isset($_POST['passwordLog']))
                {
-                     DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
+                  DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
                }
                elseif(!empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
                      !empty($_POST['email'])&&!empty($_POST['password'])&&!empty($_POST['role']))
