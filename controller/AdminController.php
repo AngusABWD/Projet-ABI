@@ -4,7 +4,6 @@
 namespace ABI\MainController;
 use ABI\model\Client;
 use ABI\model\Secteur;
-use ABI\model\Database;
 use Exception;
 require ('./model/Client.php');
 require ('./model/Secteur.php');
@@ -65,28 +64,7 @@ class AdminController
             die($e->getMessage());
         }
         
-    }    
-    /**
-     * showClientAdmin
-     *
-     * @param  mixed $value
-     * @return void
-     */
-    public static function showClientAdmin($value)
-    {
-        try
-        {
-            $results= new Database('abi');
-        $result=$results->showClients($value);
-       
-        }
-        catch(Exception $e)
-        {
-            die($e->getMessage());
-        }
-        return $result;
-    }
-    
+    }        
 }
 
 ?>
