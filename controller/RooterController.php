@@ -13,36 +13,50 @@ if (isset($_GET['action'])) {
 
         if ($_GET['action']=='home')
         {
+            $headerActive = 'home';
             MainController::viewPage('./view/indexView.php');
         }
         elseif($_GET['action']=='ABIgroup')
         {
+            $headerActive = 'ABIgroup';
             MainController::viewPage('./view/groupView.php');
         }
         elseif($_GET['action']=='actuality')
         {
+            $headerActive = 'actuality';
             MainController::viewPage('./view/actualityView.php');
         }
         elseif($_GET['action']=='offer')
         {
+            $headerActive = 'offer';
             MainController::viewPage('./view/offerView.php');
         }
         elseif($_GET['action']=='contact')
         {
+            $headerActive = 'contact';
             MainController::viewPage('./view/contactView.php');
+        }
+        elseif($_GET['action']=='contactDev')
+        {
+            $footerActive = 'contactDev';
+            MainController::viewPage('./view/indexView.php');
+        }
+        elseif($_GET['action']=='mentions')
+        {
+            $footerActive = 'mentions';
+            MainController::viewPage('./view/indexView.php');
         }
         elseif($_GET['action']=='connexion')
         
         { 
-            MainController::viewPage('./view/connexionView.php');
-           
+            MainController::viewPage('./view/connexionView.php');         
         }
         elseif($_GET['action']=='dashboard')
         {
                                                       
                if(isset($_POST['emailLog'])&& isset($_POST['passwordLog']))
                {
-                     DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
+                  DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
                }
                elseif(!empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
                      !empty($_POST['email'])&&!empty($_POST['password'])&&!empty($_POST['role']))

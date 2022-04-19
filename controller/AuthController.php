@@ -5,14 +5,27 @@ use \ABI\model\Database;
 
 
 
+/**
+ * AuthController
+ */
 class AuthController
 
-{
+{    
+    /**
+     * pdo
+     *
+     * @var mixed
+     */
     public $pdo;
     public function __construct(PDO $pdo)
     {
         $this->pdo=$pdo;
-    }
+    }    
+    /**
+     * user
+     *
+     * @return void
+     */
     public function user()
     {
         if(session_status()===PHP_SESSION_NONE)
@@ -30,7 +43,14 @@ class AuthController
         $user=$query->fetch();
          return $user ?: null;// revoi l'utilisateur si c false il revoi null
        
-    }
+    }    
+    /**
+     * login
+     *
+     * @param  mixed $user_name
+     * @param  mixed $password
+     * @return void
+     */
     public function login(string $user_name, string $password)
     {
         $query= $this->pdo->prepare('SELECT * FROM utilisateur WHERE email=:username');
@@ -47,17 +67,21 @@ class AuthController
             {
                 session_start();
             }
-            var_dump($user);
                 $_SESSION['id']= $user[0];
-                echo $user[0];
                 $_SESSION['first_name']=$user[1];
                 $_SESSION['last_name']=$user[2];
+
             return $user;
-            
+    
         }
         return null;
 
-    }
+    }    
+    /**
+     * checkRoleAdmin
+     *
+     * @return string
+     */
     public static function checkRoleAdmin():string
     {
         $data= new Database('abi');
@@ -80,7 +104,12 @@ class AuthController
         exit();
         }
     }
-
+    
+    /**
+     * checkRoleCom
+     *
+     * @return string
+     */
     public static function checkRoleCom():string
     {
         $data= new Database('abi');

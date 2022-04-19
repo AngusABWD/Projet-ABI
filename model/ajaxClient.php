@@ -6,7 +6,7 @@ require'../controller/ClientSearchController.php';
 
 if(!empty($_GET['search'])){
 
-     $results=ClientSearchController::showClientAdmin(htmlentities($_GET['search']));
+     $results=ClientSearchController::showClientSearch(htmlentities($_GET['search']));
     
     
     if(!empty($results))
