@@ -8,7 +8,7 @@ use Exception;
 require ('../model/ClientsSearch.php');
 /**
  * ClientSearchController
- * Controller pour la recherche de clients
+ * Controller pour la recherche de client
  */
 class ClientSearchController
 {    
