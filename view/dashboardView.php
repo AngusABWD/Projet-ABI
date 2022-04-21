@@ -15,7 +15,7 @@ $last_name=$_SESSION['last_name'];
 
 ob_start(); 
 ?>
-
+<link rel="stylesheet" href="./public/styles/dashboard.css">
 <hr class="py-0 my-0">
 <div class='row p-2 bonjour mx-0'>
         <div class='col'>
@@ -23,7 +23,7 @@ ob_start();
 
         </div>
         <div class="col text-right">
-        <a class="nav-link" href="./index.php?action=logOut" data-toggle="tooltip" title="Se déconnecter">Déconnexion<span class="p-3"><img class="logout"src=".public/IMG/" alt="Icone déconnexion à ajouter"></span></a>
+        <a class="nav-link" href="./index.php?action=logOut" data-toggle="tooltip" title="Se déconnecter">Déconnexion<span class="p-3"><img class="logout" src="public/IMG/deconnection.png" alt="logo"></span></a>
 
         </div>
 
@@ -46,7 +46,7 @@ ob_start();
         <div class="col">
             <ul class="nav nav flex-column">
               <li class="nav-item">
-                  <a href="./index.php?action=dashboard&amp;action3=dashboardList" class="nav-link"><img src="./public/IMG/" alt="Image utilisateurs à créer"></a>
+                  <a href="./index.php?action=dashboard&amp;action3=dashboardList" class="nav-link"><img src="./public/IMG/liste.png" alt="Image utilisateurs à créer" class="icone"></a>
                 </li>
              <li class="nav-item">
                  <a class="nav-link" href="./index.php?action=dashboard&amp;action3=dashboardList">Afficher les utilisateurs</a>
@@ -57,7 +57,7 @@ ob_start();
         <div class="col">
             <ul class="nav nav flex-column">
               <li class="nav-item">
-                  <a href="./index.php?action=dashboard&amp;action3=modifyUser" class="nav-link"><img src="./public/IMG/" alt="Image modifier utilisateurs à créer"></a>
+                  <a href="./index.php?action=dashboard&amp;action3=modifyUser" class="nav-link"><img src="./public/IMG/modifier.png" alt="Image modifier utilisateurs à créer" class="icone"></a>
                 </li>
              <li class="nav-item">
                  <a class="nav-link" href="./index.php?action=dashboard&amp;action3=modifyUser">Modifier les utilisateurs</a>
@@ -68,7 +68,7 @@ ob_start();
         <div class="col">
             <ul class="nav nav flex-column">
               <li class="nav-item">
-                  <a href="./index.php?action=dashboard&amp;action3=addUser" class="nav-link"><img src="./public/IMG/" alt="Image ajouter utilisateurs à créer"></a>
+                  <a href="./index.php?action=dashboard&amp;action3=addUser" class="nav-link"><img src="./public/IMG/ajouter.png" alt="Image ajouter utilisateurs à créer" class="icone"></a>
                 </li>
              <li class="nav-item">
                  <a class="nav-link" href="./index.php?action=dashboard&amp;action3=addUser">Ajouter un utilisateur</a>
@@ -79,7 +79,7 @@ ob_start();
         <div class="col">
             <ul class="nav nav flex-column">
               <li class="nav-item">
-                  <a href="./index.php?action=dashboardList" class="nav-link"><img src="./public/IMG/" alt="Image supprimer utilisateurs à créer"></a>
+                  <a href="./index.php?action=dashboardList" class="nav-link"><img src="./public/IMG/supprimer.png" alt="Image supprimer utilisateurs à créer" class="icone"></a>
                 </li>
              <li class="nav-item">
                  <a class="nav-link" href="./index.php?action=dashboardList">Supprimer un utilisateur</a>

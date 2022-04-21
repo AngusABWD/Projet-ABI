@@ -7,19 +7,19 @@ body{
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    background: linear-gradient(#E6CCB2, 30%, #c29c76);
    
-
-}
+    }
 a{
     text-decoration: none;
     text-transform: uppercase;
 }
 header, section{
-    background-color: #fff;
+    background-color: #E6CCB2;
 }
 .socialNetwork
 {
-    background-color: #004279;
+    background-color: #DDB892;
     max-height: 40px;
 }
 .fab
@@ -34,7 +34,7 @@ header, section{
 }
 .socialNetwork ul li:hover
 {
-    background-color: #E78810;
+    background-color: #9D6B53;
 }
 .logo
 {
@@ -57,32 +57,32 @@ header, section{
 }
 
 a:hover{
-    color: #E78810 !important;
+    color: #9D6B53 !important;
     transform: translateX(3px);
     transition: .2s ease;
     
 }
 .dropdown-menu a
 {
-    color: #004279 !important;
+    color: #FBC4AB !important;
 }
 .icone{
     cursor: pointer;
 }
 .dropdown-item:hover
 {
-    color: #E78810 !important;
+    color: #9D6B53 !important;
     transform: translateX(3px) !important;
     transition: .2s ease !important;
-    background-color: #ECECEC !important;
+    background-color: #E6CCB2 !important;
 }
 .active a
 {
-    color: #E78810 !important;
+    color: #9D6B53 !important;
 }
 .espace-membre a
 {
-    color: #E78810;
+    color: #E6B8A2;
     font-weight: bold;
 }
 .paragraph-section
@@ -109,18 +109,28 @@ a:hover{
 {
     color: #747474;
 }
+
+.img_footer {
+        height: 50%;
+}
+
+.pousse {
+    height: 50%;
+}
+
 footer
 {
-    border: 2px solid;
+    background-color: #774936;
+    text-align: center;
 
 }
 .footer-link a
 {
-    color: black;
+    color: #B08569;
 }
 .connexion
 {
-    color: #E78810;
+    color: #9D6B53;
 }
 .connexion:hover{
     transform: translateX(3px);
@@ -205,3 +215,10 @@ input:focus{
     justify-content: center;
 }
 
+.col-md-4 col-12 {
+    height: 50px;
+}
+
+.btn-abi {
+    background-color: #FBC4AB;
+}

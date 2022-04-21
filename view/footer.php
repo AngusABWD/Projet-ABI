@@ -1,7 +1,7 @@
         <footer class="container text-center p-4">
                     <div class="row">
                         <div class="col-md-4 col-12">
-                            <img class="img-fluid" alt="logo a créer" src="./public/IMG/.png">
+                        <img alt="logo a créer" src="./public/IMG/footer.png" class="img_footer">
                         </div>
                         <div class="navbar col-md-4 col-12 text-center">
                             <ul class="navbar-nav text-center">
@@ -15,7 +15,7 @@
 
                         </div>
                         <div class="col-md-4 col-12">
-                            <img alt="Image à trouver" src="./public/IMG/">
+                        <img alt="Image à trouver" src="./public/IMG/pousse.png" class="pousse">
 
                         </div>
 

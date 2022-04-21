@@ -15,7 +15,7 @@
         <header class="container px-0 mt-3">
             <div class="row logo mx-0 d-flex align-items-center">
                 <div class="col p-4">
-                    <a href="/index.php"><img alt="logo a ajouter" src="./public/IMG/" class="img-fluid"></a>
+                <a href="/index.php"><img alt="logo a ajouter" src="./public/IMG/screenshot.6979.jpg" class="img-fluid"></a>
                     
                 </div>
                 <div class="col mt-4 pt-4 text-left d-md-block d-none">

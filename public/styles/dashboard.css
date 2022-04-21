@@ -7,6 +7,7 @@ body{
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    background: linear-gradient(#E6CCB2, 30%, #c29c76);
    
    
 
@@ -14,12 +15,12 @@ body{
 
 header
 {
-    background: #fff;
+    background-color: #E6CCB2;
     height: 200px;
 }
 .bonjour a:hover
 {
-    color: #E78810 !important;
+    color: #E6B8A2 !important;
     transform: translateX(3px) !important;
     transition: .2s ease !important;
 }
@@ -35,11 +36,12 @@ header
 }
 section
 {
-    background:  #fff;
+    background:  #DDB892;
 }
 footer
 {
-    border: 2px solid;
+    background-color: #774936;
+    text-align: center;
 
 }
 .footer-link a
@@ -49,8 +51,8 @@ footer
 .gestion
 {
   
-    height:100px;
-    width:200px;
+    height:60px;
+    width:80px;
    
 }
 header a
@@ -61,7 +63,7 @@ header a
 }
 header a:hover
 {
-    color: #E78810 !important;
+    color: #9C6644 !important;
     transform: translateX(3px) !important;
     transition: .2s ease !important;
     
@@ -79,8 +81,8 @@ section
 }
 .logout
 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 .modif img
@@ -102,18 +104,18 @@ section
     transition: .2s ease;
 }
 .modif a:hover{
-    color: #E78810 ;
+    color: #9C6644 ;
     transform: translateX(3px);
     transition: .2s ease;
 
 }
 table th{
     color: #747474;
-    background-color: #ECECEC
+    background-color: #CD9777
 }
 .formAdd
 {
-    background-color: #ECECEC;
+    background-color: #CD9777;
     box-shadow: 3px 2px 10px #2C2D2F;
 
 }
@@ -121,4 +123,8 @@ table th{
     font-size: 18px;
     color: #004279;
     font-weight: 800;
+}
+
+.icone {
+    height: 15px;
 }
