@@ -15,6 +15,20 @@ use \ABI\MainController\MainController;
                     }
                 ?>
     <?php
+function strrevpos($instr, $needle)
+{
+    $rev_pos = strpos (strrev($instr), strrev($needle));
+    if ($rev_pos===false) return false;
+    else return strlen($instr) - $rev_pos - strlen($needle);
+};
+
+
+
+    function after_last ($indice, $inthat)
+    {
+        if (!is_bool(strrevpos($inthat, $indice)))
+        return substr($inthat, strrevpos($inthat, $indice)+strlen($indice));
+    };
 if(isset($_GET['action2']))
     {
 
@@ -33,11 +47,17 @@ if(isset($_GET['action2']))
                         MainController::viewPage('./view/addClientView.php');
                                 
                     }
-                    elseif($_GET['action2']==='detailClient')
+                    elseif(strpos($_GET['action2'],"detailClient")!==false)
                     {
+                       $indice = after_last('t',$_GET['action2']);
+                    
+                       $_SESSION['ind']= $indice;
                         MainController::viewPage('./view/detailClientView.php');
                                 
-                    }
+                    } 
+                   
+                    
+                    
                    
                                             
     }
