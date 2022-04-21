@@ -7,7 +7,7 @@ class Form
 {    
     /**
      * data
-     *
+     * Données
      * @var mixed
      */
     private $data;
@@ -18,7 +18,7 @@ class Form
     
     /**
      * input
-     *
+     * Champ d'information
      * @param  mixed $type
      * @param  mixed $name
      * @param  mixed $label
@@ -37,7 +37,7 @@ HTML;
     }    
     /**
      * submit
-     *
+     * Bouton pour soumettre l'information
      * @param  mixed $text
      * @return void
      */
