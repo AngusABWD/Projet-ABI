@@ -34,17 +34,17 @@ if(isset($_GET['action2']))
 
                     if($_GET['action2']==='clientList')
                     {
-                        MainController::viewPage('./view/clientList.php');
+                        MainController::viewPage('./view/buisness/clientList.php');
                     }
                             
                     elseif($_GET['action2']==='searchClient')
                     {
-                        MainController::viewPage('./view/searchClientView.php');
+                        MainController::viewPage('./view/buisness/searchClientView.php');
                                 
                     }
                     elseif($_GET['action2']==='addClient')
                     {
-                        MainController::viewPage('./view/addClientView.php');
+                        MainController::viewPage('./view/buisness/addClientView.php');
                                 
                     }
                     elseif(strpos($_GET['action2'],"detailClient")!==false)
@@ -52,7 +52,7 @@ if(isset($_GET['action2']))
                        $indice = after_last('t',$_GET['action2']);
                     
                        $_SESSION['ind']= $indice;
-                        MainController::viewPage('./view/detailClientView.php');
+                        MainController::viewPage('./view/buisness/detailClientView.php');
                                 
                     } 
                    

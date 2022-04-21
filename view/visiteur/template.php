@@ -6,4 +6,4 @@
 
         </section>
 
-<?php require 'footer.php'; ?>
+<?php require './view/footer.php'; ?>

@@ -3,7 +3,6 @@ namespace ABI\model;
 
 use Exception;
 use \PDO;
-use User;
 
 /**
  * Database
@@ -46,7 +45,7 @@ class Database
         {
             if(self::$pdo===null)
             {
-                $pdo= new PDO('mysql:host=localhost;dbname=abi','root', '');
+                $pdo= new PDO('mysql:host=localhost;dbname=abi','root', '@Rs1992.');
                 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 self::$pdo=$pdo;
             }

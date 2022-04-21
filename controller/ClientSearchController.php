@@ -5,7 +5,7 @@ namespace ABI\MainController;
 use ABI\model\Database;
 use Exception;
 
-require ('../model/ClientsSearch.php');
+require ('../model/Database.php');
 /**
  * ClientSearchController
  * Controller pour la recherche de client

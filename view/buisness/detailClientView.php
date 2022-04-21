@@ -1,7 +1,7 @@
 <?php 
 
 use ABI\MainController\AdminController;
-require_once ("./view/clientView.php");
+require_once ("./view/buisness/clientView.php");
 $indice = $_SESSION['ind'];
 $result=AdminController::detailCLient();
 

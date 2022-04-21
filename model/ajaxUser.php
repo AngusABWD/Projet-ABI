@@ -11,7 +11,7 @@ if (!empty($_GET['search'])) {
 
 
 
-  $results = UserSearchController::modifyUserDashboard(htmlentities($_GET['search']));
+  $results = UserSearchController::modifyUserSearch(htmlentities($_GET['search']));
   if (!empty($results)) {
 
 ?>

@@ -96,18 +96,18 @@ ob_start();
 
                     if($_GET['action3']==='dashboardList')
                     {
-                        MainController::viewpage('./view/listView.php');
+                        MainController::viewpage('./view/admin/listView.php');
                     }
                             
                 
                     elseif($_GET['action3']==='addUser')
                     {
-                        MainController::viewpage('./view/addUserView.php');
+                        MainController::viewpage('./view/admin/addUserView.php');
                                 
                     }
                     elseif($_GET['action3']==='modifyUser')
                     {
-                        MainController::viewpage('./view/modifyUserView.php');
+                        MainController::viewpage('./view/admin/modifyUserView.php');
                                 
                     }
                                             

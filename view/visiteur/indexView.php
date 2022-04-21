@@ -1,4 +1,4 @@
-<?php $title='Acceuil'; ?>
+<?php $title='Accueil'; ?>
 <?php ob_start(); ?>
 
 <div class="px-0 mx-0 d-none d-md-block banniere">

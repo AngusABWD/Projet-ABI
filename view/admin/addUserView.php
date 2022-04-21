@@ -2,7 +2,7 @@
 <div class="row w-75 p-4 mx-auto formAdd">
        <div class="col">
         <h4 class="text-center">Veuillez rensigner les champs ci-dessous:</h4>  
-            <form action="../index.php?action=dashboard" method="POST">
+            <form action="./index.php?action=dashboard" method="POST">
                 <div class="form-group">
                   <label for="first-name">
                     Prénom

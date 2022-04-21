@@ -71,20 +71,6 @@ class DashboardController
        
         return $result;
     }
-
-
-        
-    /**
-     * modifyUserDashboard
-     * Modification de l'utilisateur dans le tableau de bord
-     * @param  mixed $value
-     * @return void
-     */
-    public static function modifyUserDashboard($value)
-    {
-        $results= new Database('abi');
-        return $results->showUser($value);
-    }
     
    
 }
