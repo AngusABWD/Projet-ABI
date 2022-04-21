@@ -19,7 +19,7 @@ ob_start();
 <hr class="py-0 my-0">
 <div class='row p-2 bonjour mx-0'>
         <div class='col'>
-        <div class="p-3 alert alert-success">Vous étes connecté en tant que <?= strtoupper($first_name).' '.strtoupper($last_name); ?></div>
+        <div class="p-3 alert cadre">Vous êtes connecté en tant que <?= strtoupper($first_name).' '.strtoupper($last_name); ?></div>
 
         </div>
         <div class="col text-right">

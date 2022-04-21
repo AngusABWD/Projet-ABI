@@ -22,16 +22,23 @@ footer
 {
     background-color: #774936;
     text-align: center;
-
-
 }
+
+.img_footer {
+    height: 50%;
+}
+
+.pousse {
+height: 50%;
+}
+
 .footer-link a
 {
-    color: black;
+    color: #B08569;
 }
 .navbar-item a
 {
-    color: #004279;
+    color: #EDC4B3;
     font-weight: bold;
     
 }
@@ -76,7 +83,7 @@ h3
 }
 label
 {
-    color: #004279;
+    color: #EDC4B3;
     font-weight: 600;
 }
 label:hover{
@@ -89,4 +96,10 @@ label:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.cadre {
+    color : #8fce4e;
+    background-color: #9C6644;
 }

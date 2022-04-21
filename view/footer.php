@@ -4,7 +4,7 @@
                         <img alt="logo a créer" src="./public/IMG/footer.png" class="img_footer">
                         </div>
                         <div class="navbar col-md-4 col-12 text-center">
-                            <ul class="navbar-nav text-center">
+                            <ul class="navbar-nav text-center w-100">
                                 <li class="footer-link nav-item <?php global $footerActive; if ($footerActive =='contactDev'):?>  active <?php endif?>">
                                     <a href="../index.php?action=contactDev" class='nav-link'>Contactez nous</a>
                                 </li>
