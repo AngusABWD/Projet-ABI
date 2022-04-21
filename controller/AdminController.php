@@ -28,7 +28,11 @@ class AdminController
         
     
     }
+    public static function modifierClient($raison_sociale, $telephone, $adresse, $ville){
+        $results = new Client('abi');
+        
 
+    }
 
 
     /**
