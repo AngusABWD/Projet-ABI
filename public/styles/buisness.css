@@ -6,6 +6,7 @@ body{
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    background-color: #EDE0D4;
    
    
 
@@ -14,12 +15,14 @@ body{
 
 section
 {
-    background:  #fff;
+    background:  #B08569;
     min-height: 800px;
 }
 footer
 {
-    border: 2px solid;
+    background-color: #774936;
+    text-align: center;
+
 
 }
 .footer-link a
@@ -68,7 +71,7 @@ table th{
 }
 h3
 {
-    color: #E78810;
+    color: #E6B8A2;
     
 }
 label
@@ -77,7 +80,7 @@ label
     font-weight: 600;
 }
 label:hover{
-    color: #E78810 ;
+    color: #E6B8A2 ;
     transform: translateX(3px);
     transition: .2s ease;
 
