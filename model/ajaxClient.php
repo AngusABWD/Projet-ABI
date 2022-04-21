@@ -42,7 +42,7 @@ if(!empty($_GET['search'])){
          <td class="col"><?= $result[3]?></td>
          <td class="col-2"><?= $result[5]?></td>
          
-         <td class="col-2 text-center"><a href="./index.php?action=buisness&amp;action=detailClient&amp;detail="<?= $result[0]?>><i class="fas fa-info-circle"></i></a></td>
+         <td class="col-2 text-center"><a href="./index.php?action=buisness&action2=clientList&action2=detailClient<?= $result[0] ?>"><i class="fas fa-info-circle"></i></a></td>
          
      </tr>
     <?php

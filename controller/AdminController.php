@@ -19,7 +19,18 @@ class AdminController
         $results= new Client('abi');
         return $results->getClients();
        
-    }    
+    }   
+    
+    public static function detailCLient(){
+        $results = new client('abi');
+        $result=$results->getClients();
+        return $result;
+        
+    
+    }
+
+
+
     /**
      * addClientAdmin
      *
