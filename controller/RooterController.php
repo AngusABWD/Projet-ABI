@@ -102,10 +102,11 @@ if (isset($_GET['action'])) {
           
         else
         {
-        
-           MainController::viewPage('./view/visiteur/indexView.php');
+            $headerActive = 'home';
+            MainController::viewPage('./view/visiteur/indexView.php');
         }
 
     } else {
+        $headerActive = 'home';
         MainController::viewPage('./view/visiteur/indexView.php');
     }

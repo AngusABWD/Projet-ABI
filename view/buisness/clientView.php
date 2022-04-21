@@ -3,6 +3,13 @@ use \ABI\MainController\MainController;
 
 ?>
 <div class="col client-view my-4 ml-2 mr-4">
+    <?php  if (!isset($_GET['action2'])):?>
+        <div class="text-center m-5 pt-5">
+            <h1>Bienvenue dans la</h1>
+            <h1>Gestion commerciale</h1>
+        </div>
+    <?php endif?>
+
 <?php
                     if(isset($_GET['successAdd']))
                     {

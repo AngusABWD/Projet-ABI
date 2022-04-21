@@ -76,17 +76,6 @@ ob_start();
             </ul>
                
         </div>
-        <div class="col">
-            <ul class="nav nav flex-column">
-              <li class="nav-item">
-                  <a href="./index.php?action=dashboardList" class="nav-link"><img src="./public/IMG/supprimer.png" alt="Image supprimer utilisateurs à créer" class="icone"></a>
-                </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="./index.php?action=dashboardList">Supprimer un utilisateur</a>
-                </li>   
-            </ul>
-               
-        </div>
 </div>
 
 
