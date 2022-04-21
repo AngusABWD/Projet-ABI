@@ -30,3 +30,4 @@ function showUser(str) {
       xmlhttp.send();
     }
   }
+            
