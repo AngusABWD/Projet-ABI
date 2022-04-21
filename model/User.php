@@ -10,7 +10,7 @@ class User
     
     /**
      * getDatabase
-     *
+     * Obtention de la base de données
      * @return void
      */
     public static function getDatabase()
@@ -24,7 +24,7 @@ class User
     
     /**
      * getUsers
-     *
+     * Obtention des utilisateurs
      * @return void
      */
     public function getUsers ()
@@ -33,7 +33,7 @@ class User
     }    
     /**
      * getUser
-     *
+     * Obtention des utilisateurs
      * @param  mixed $email
      * @param  mixed $password
      * @return void

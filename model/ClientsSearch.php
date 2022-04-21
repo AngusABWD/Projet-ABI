@@ -14,7 +14,7 @@ class Clients extends Database
     
     /**
      * getClients
-     *
+     * Obtention des clients
      * @return void
      */
     public function getClients()
@@ -33,7 +33,7 @@ class Clients extends Database
     }    
     /**
      * getClient
-     *
+     * Obtention du client
      * @param  mixed $id_client
      * @return void
      */
@@ -57,7 +57,7 @@ class Clients extends Database
     }    
     /**
      * addClient
-     *
+     * Ajout d'un nouveau client
      * @param  mixed $id_secteur
      * @param  mixed $raison_sociale
      * @param  mixed $adresse

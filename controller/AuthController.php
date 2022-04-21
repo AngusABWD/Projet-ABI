@@ -23,7 +23,7 @@ class AuthController
     }    
     /**
      * user
-     *
+     *Utilisateur
      * @return void
      */
     public function user()
@@ -46,7 +46,7 @@ class AuthController
     }    
     /**
      * login
-     *
+     * Connexion
      * @param  mixed $user_name
      * @param  mixed $password
      * @return void
@@ -79,7 +79,7 @@ class AuthController
     }    
     /**
      * checkRoleAdmin
-     *
+     * Vérification du role de l'administrateur
      * @return string
      */
     public static function checkRoleAdmin():string
@@ -107,7 +107,7 @@ class AuthController
     
     /**
      * checkRoleCom
-     *
+     * Vérification du role du commercial
      * @return string
      */
     public static function checkRoleCom():string

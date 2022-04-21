@@ -11,7 +11,7 @@ class UserSearchController
 {    
     /**
      * viewUsers
-     *
+     * Vue des utilisateurs
      * @return void
      */
     public static function viewUsers()
@@ -24,7 +24,7 @@ class UserSearchController
         
     /**
      * checkUser
-     *
+     * Vérification de l'utilisateur
      * @param  mixed $email
      * @param  mixed $password
      * @return void
@@ -55,7 +55,7 @@ class UserSearchController
     }    
     /**
      * addUserDashboard
-     *
+     * Ajout dans le tableau de bord de l'utilisateur
      * @param  mixed $first_name
      * @param  mixed $last_name
      * @param  mixed $email
@@ -76,7 +76,7 @@ class UserSearchController
         
     /**
      * modifyUserDashboard
-     *
+     * Modification de l'utilisateur dans le tableau de bord
      * @param  mixed $value
      * @return void
      */

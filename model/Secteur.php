@@ -14,7 +14,7 @@ class Secteur extends Database
     
     /**
      * getSecteurs
-     *
+     * Obtention des secteurs
      * @return void
      */
     public static function getSecteurs()
@@ -33,7 +33,7 @@ class Secteur extends Database
     }    
     /**
      * getSecteur
-     *
+     * Obtention des secteurs
      * @param  mixed $secteur
      * @return int
      */
