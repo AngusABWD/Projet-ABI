@@ -1,0 +1,19 @@
+#-------------
+# Config
+#-------------
+
+# Le serveur doit suivre les liens symboliques:
+Options +FollowSymlinks
+
+# Activation du module de réécriture 
+RewriteEngine on
+
+#-------------- page accueil ------------
+RewriteRule ^home$ index.php?action=home
+RewriteRule ^ABIgroup$ index.php?action=ABIgroup
+RewriteRule ^actuality$ index.php?action=actuality
+RewriteRule ^offer$ index.php?action=offer
+RewriteRule ^contact$ index.php?action=contact
+RewriteRule ^connexion$ index.php?action=connexion
+
+#-------------- page de connexion --------

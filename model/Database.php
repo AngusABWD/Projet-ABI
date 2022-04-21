@@ -3,7 +3,6 @@ namespace ABI\model;
 
 use Exception;
 use \PDO;
-use User;
 
 /**
  * Database
@@ -20,7 +19,7 @@ class Database
     
     /**
      * __construct
-     *
+     * Construction de la base de données
      * @param  mixed $db_name
      * @param  mixed $db_user
      * @param  mixed $db_pass
@@ -61,7 +60,7 @@ class Database
         
     /**
      * getUsers
-     *
+     * Obtentions de l'utilisateur
      * @return void
      */
     public function getUsers ()
@@ -79,7 +78,7 @@ class Database
     }    
     /**
      * getUser
-     *
+     * Obtentions de l'utilisateur
      * @param  mixed $id
      * @return void
      */
@@ -103,7 +102,7 @@ class Database
     }    
     /**
      * updateUser
-     *
+     * Mis à jour de l'utilisateur
      * @param  mixed $id
      * @param  mixed $role
      * @return void
@@ -125,7 +124,7 @@ class Database
     }    
     /**
      * deleteUser
-     *
+     * Suppression de l'utilisateur
      * @param  mixed $id
      * @return void
      */
@@ -145,7 +144,7 @@ class Database
     }    
     /**
      * addUser
-     *
+     * Ajout d'un utilisateur
      * @param  mixed $first_name
      * @param  mixed $last_name
      * @param  mixed $email
@@ -174,7 +173,7 @@ class Database
     }    
     /**
      * showUser
-     *
+     * Affichage de l'utilisateur
      * @param  mixed $value
      * @return void
      */
@@ -196,7 +195,7 @@ class Database
     }    
     /**
      * showClients
-     *
+     * Affichage des clients
      * @param  mixed $value
      * @return void
      */

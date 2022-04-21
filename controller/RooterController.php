@@ -14,42 +14,42 @@ if (isset($_GET['action'])) {
         if ($_GET['action']=='home')
         {
             $headerActive = 'home';
-            MainController::viewPage('./view/indexView.php');
+            MainController::viewPage('./view/visiteur/indexView.php');
         }
         elseif($_GET['action']=='ABIgroup')
         {
             $headerActive = 'ABIgroup';
-            MainController::viewPage('./view/groupView.php');
+            MainController::viewPage('./view/visiteur/groupView.php');
         }
         elseif($_GET['action']=='actuality')
         {
             $headerActive = 'actuality';
-            MainController::viewPage('./view/actualityView.php');
+            MainController::viewPage('./view/visiteur/actualityView.php');
         }
         elseif($_GET['action']=='offer')
         {
             $headerActive = 'offer';
-            MainController::viewPage('./view/offerView.php');
+            MainController::viewPage('./view/visiteur/offerView.php');
         }
         elseif($_GET['action']=='contact')
         {
             $headerActive = 'contact';
-            MainController::viewPage('./view/contactView.php');
+            MainController::viewPage('./view/visiteur/contactView.php');
         }
         elseif($_GET['action']=='contactDev')
         {
             $footerActive = 'contactDev';
-            MainController::viewPage('./view/indexView.php');
+            MainController::viewPage('./view/visiteur/indexView.php');
         }
         elseif($_GET['action']=='mentions')
         {
             $footerActive = 'mentions';
-            MainController::viewPage('./view/indexView.php');
+            MainController::viewPage('./view/visiteur/indexView.php');
         }
         elseif($_GET['action']=='connexion')
         
         { 
-            MainController::viewPage('./view/connexionView.php');         
+            MainController::viewPage('./view/visiteur/connexionView.php');         
         }
         elseif($_GET['action']=='dashboard')
         {
@@ -72,7 +72,7 @@ if (isset($_GET['action'])) {
               
                else
                {
-               MainController::viewPage('./view/dashboardView.php');
+               MainController::viewPage('./view/admin/dashboardView.php');
                }
 
         }
@@ -96,16 +96,16 @@ if (isset($_GET['action'])) {
             }
             else
             {
-                MainController::viewPage('./view/buisnessView.php');
+                MainController::viewPage('./view/buisness/buisnessView.php');
             }
          }
           
         else
         {
         
-           MainController::viewPage('./view/indexView.php');
+           MainController::viewPage('./view/visiteur/indexView.php');
         }
 
     } else {
-        MainController::viewPage('./view/indexView.php');
+        MainController::viewPage('./view/visiteur/indexView.php');
     }

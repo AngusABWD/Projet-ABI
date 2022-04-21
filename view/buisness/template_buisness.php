@@ -8,4 +8,4 @@ require 'header_buisness.php'; ?>
 
         </section>
 
-<?php require 'footer.php'; ?>
+<?php require './view/footer.php'; ?>

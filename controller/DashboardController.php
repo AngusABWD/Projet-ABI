@@ -11,7 +11,7 @@ class DashboardController
 {    
     /**
      * viewUsers
-     *
+     * Vue des utilisateurs
      * @return void
      */
     public static function viewUsers()
@@ -24,7 +24,7 @@ class DashboardController
         
     /**
      * checkUser
-     *
+     * Vérification de l'utilisateur
      * @param  mixed $email
      * @param  mixed $password
      * @return void
@@ -55,7 +55,7 @@ class DashboardController
     }    
     /**
      * addUserDashboard
-     *
+     * Ajout dans le tableau de bord de l'utilisateur
      * @param  mixed $first_name
      * @param  mixed $last_name
      * @param  mixed $email
@@ -70,20 +70,6 @@ class DashboardController
         header('Location:./index.php?action=dashboard&successAdd=true');
        
         return $result;
-    }
-
-
-        
-    /**
-     * modifyUserDashboard
-     *
-     * @param  mixed $value
-     * @return void
-     */
-    public static function modifyUserDashboard($value)
-    {
-        $results= new Database('abi');
-        return $results->showUser($value);
     }
     
    

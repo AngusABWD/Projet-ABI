@@ -11,7 +11,7 @@ class AdminController
 {    
     /**
      * viewClients
-     *
+     * Vue du client
      * @return void
      */
     public static function viewClients()
@@ -19,10 +19,21 @@ class AdminController
         $results= new Client('abi');
         return $results->getClients();
        
-    }    
+    }   
+    
+    public static function detailCLient(){
+        $results = new client('abi');
+        $result=$results->getClients();
+        return $result;
+        
+    
+    }
+
+
+
     /**
      * addClientAdmin
-     *
+     * Ajoute un administrateur client
      * @param  mixed $secteur
      * @param  mixed $raison_sociale
      * @param  mixed $adresse
@@ -44,7 +55,7 @@ class AdminController
     }    
     /**
      * viewSecteurs
-     *
+     * Vue des secteurs
      * @return void
      */
     public static function viewSecteurs()

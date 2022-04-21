@@ -1,7 +1,7 @@
 <div class="row w-75 p-4 mx-auto formAdd">
        <div class="col">
         <h3 class="text-center mb-4 p-4">Ajouter un client</h3>  
-            <form action="../index.php?action=buisness" method="POST">
+            <form action="./index.php?action=buisness" method="POST">
                 <div class="form-group">
                     <label for="secteur">
                         Secteur d'activité

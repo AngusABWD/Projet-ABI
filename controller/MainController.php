@@ -10,7 +10,7 @@ class MainController
     
     /**
      * viewPage
-     *
+     * Vue de la page
      * @param  mixed $url
      * @return void
      */
@@ -22,7 +22,7 @@ class MainController
         
     /**
      * logOut
-     *
+     * Ecran de déconnexion
      * @return void
      */
     public static function logOut()
