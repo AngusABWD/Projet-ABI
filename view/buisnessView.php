@@ -9,7 +9,7 @@ ob_start();
 ?>
 <div class="row navbar navbar-expand-sm mx-0 px-0">
     <div class="col pt-2">
-        <p class='p-1 alert-success'>Vous étes connecté en tant que <?=strtoupper($_SESSION['first_name']).' '.strtoupper($_SESSION['last_name']); ?></p>
+        <p class='cadre p-1 alert-success'>Vous êtes connecté en tant que <?=strtoupper($_SESSION['first_name']).' '.strtoupper($_SESSION['last_name']); ?></p>
 
     </div>
     <div class="col-2">

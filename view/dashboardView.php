@@ -19,7 +19,7 @@ ob_start();
 <hr class="py-0 my-0">
 <div class='row p-2 bonjour mx-0'>
         <div class='col'>
-        <div class="p-3 alert alert-success">Vous étes connecté en tant que <?= strtoupper($first_name).' '.strtoupper($last_name); ?></div>
+        <div class="p-3 alert cadre">Vous êtes connecté en tant que <?= strtoupper($first_name).' '.strtoupper($last_name); ?></div>
 
         </div>
         <div class="col text-right">
@@ -76,17 +76,7 @@ ob_start();
             </ul>
                
         </div>
-        <div class="col">
-            <ul class="nav nav flex-column">
-              <li class="nav-item">
-                  <a href="./index.php?action=dashboardList" class="nav-link"><img src="./public/IMG/supprimer.png" alt="Image supprimer utilisateurs à créer" class="icone"></a>
-                </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="./index.php?action=dashboardList">Supprimer un utilisateur</a>
-                </li>   
-            </ul>
-               
-        </div>
+    
 </div>
 
 

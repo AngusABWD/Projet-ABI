@@ -111,11 +111,11 @@ a:hover{
 }
 
 .img_footer {
-        height: 50%;
+        height: 5em;
 }
 
 .pousse {
-    height: 50%;
+    height: 5em;
 }
 
 footer
@@ -162,7 +162,7 @@ label{
     font-size: 20px;
 }
 label:hover{
-    color: #E78810;
+    color: #DEAB90;
     transform: translateX(3px);
     transition: .2s ease;
     font-weight: italic;
@@ -216,9 +216,16 @@ input:focus{
 }
 
 .map {
-    height: 50px;
+    height: 400px;
+    width: 600px;
 }
 
 .btn-abi {
     background-color: #FBC4AB;
 }
+
+.imgmap {
+    height: 400px;
+    width: 600px;
+    text-align: left;
+} 
