@@ -19,7 +19,7 @@
                     
                 </div>
                 <div class="col mt-4 pt-4 text-left d-md-block d-none">
-                    <h4 class="slogan">Slogan à créer</h4>
+                    <h4 class="slogan"> L'INSPIRATION N’A PLUS DE FREINS....</h4>
                 </div>
                 <!-- menu burger-->
                 <div class="col-2 d-md-none d-block dropdown dropleft">

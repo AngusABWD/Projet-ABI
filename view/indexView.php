@@ -11,13 +11,10 @@
 
                     </div>
                     <div class="col-md-8 col-12 text-center py-4 px-4">
-                        <h2 class="titre-section text-center">Titre présentation à créer</h2>
+                        <h2 class="titre-section text-center">BIENVENUE A ACTIVE BRETAGNE INFORMATIQUE</h2>
                         <p class="paragraph-section text-center">
-                        présentation à créer
+                        Créée en 2022, Active Bretagne Informatique est une société de prestations en services d’ingénierie informatique, privilégiant une relation de confiance, de complémentarité et de durabilité avec ses clients. Nos métiers c’est étudier vos attentes, vous conseiller, créer & développer vos solutions, vous assister, ce sont autant de compétences que Active Bretagne met à votre disposition pour vous fournir les meilleurs produits et services dans le domaine des technologies de l’information et de la communication. Notre société est spécialisée dans les projets au forfait mais aussi à de la prestation en régie, elle intervient essentiellement en région Bretagne et sa clientèle principale est la pme/pmi spécialisée en agro-alimentaire. Nous proposons des produits qui soient d’avant-garde et adaptés aux besoins de nos clients. Notre culture d’entreprise se caractérise par un partage de nos valeurs au quotidien au sein des équipes et avec nos clients. Nos professionnels constituent une valeur forte de notre entreprise. Ils possèdent une double compétence, technique et métier et sont force de propositions en adoptant une démarche proactive. 
                         </p>
-                        <!--Faire le liens du bouton avec GROUP ABI-->
-                        <button class="btn btn-primary">DÉCOUVRIR ABI</button>
-
                     </div>
                     <div class="col-md-2">
 
