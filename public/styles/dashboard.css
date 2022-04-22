@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 body{
     box-sizing: border-box;
-    background: url('../IMG/background.jpg') no-repeat;
+    background: url("../IMG/bg.jpg") no-repeat;
     background-size: cover;
     text-decoration: none;
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    background: linear-gradient(#E6CCB2, 30%, #c29c76);
    
    
 
