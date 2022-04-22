@@ -3,6 +3,7 @@
 
 use ABI\MainController\MainController;
 use \ABI\MainController\AuthController;
+use ABI\model\Database;
 
 
 
@@ -35,12 +36,31 @@ ob_start();
                     {
                 ?>
                     <div class="alert alert-success">
-                           Utilisateur ajouté avec succés!
+                        Utilisateur ajouté avec succès!
 
                     </div>
                 <?php
                     }
+                
+                    if(isset($_GET['successSupp']))
+                    {
                 ?>
+                        <div class="alert alert-success">
+                        Utilisateur effacé avec succès!
+
+                        </div>
+                <?php
+                    }
+                    if(isset($_GET['successUpdate']))
+                    {
+                ?>
+                    <div class="alert alert-success">
+                        Utilisateur modifié avec succès!
+
+                    </div>
+                <?php
+                    }
+                    ?>
 
 <div class="row modif text-center mb-4">
         <div class="col">
@@ -76,32 +96,51 @@ ob_start();
             </ul>
                
         </div>
+
+        <div class="col">
+        <ul class="nav nav flex-column">
+            <li class="nav-item">
+                <a href="./index.php?action=dashboard&amp;action3=deleteUser"  class="nav-link"><img src="./public/IMG/supprimer.png" alt="Image supprimer utilisateurs à créer" class="icone"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.php?action=dashboard&amp;action3=deleteUser">Supprimer un utilisateur</a>
+            </li>
+        </ul>
+
+    </div>
 </div>
 
 
-<?php 
-    if(isset($_GET['action3']))
-    {
+<?php
+if (isset($_GET['action3'])) {
 
-                    if($_GET['action3']==='dashboardList')
-                    {
-                        MainController::viewpage('./view/admin/listView.php');
-                    }
-                            
-                
-                    elseif($_GET['action3']==='addUser')
-                    {
-                        MainController::viewpage('./view/admin/addUserView.php');
-                                
-                    }
-                    elseif($_GET['action3']==='modifyUser')
-                    {
-                        MainController::viewpage('./view/admin/modifyUserView.php');
-                                
-                    }
-                                            
+    if ($_GET['action3'] === 'dashboardList') {
+        MainController::viewpage('./view/admin/listView.php');
+
+    } elseif ($_GET['action3'] === 'addUser') {
+        MainController::viewpage('./view/admin/addUserView.php');
+
+    } elseif ($_GET['action3'] === 'modifyUser') {
+        MainController::viewpage('./view/admin/modifyUserView.php');
+
+    } elseif ($_GET['action3'] === 'updateUser') {
+        if (isset($_POST["id_user"])) {
+            $id = $_GET['id_user'];
+            $result = new Database('abi');
+            $result = $data->updateUser($_POST["id_user"], $_POST["first_name"], $_POST["last_name"], $_POST["email"], $_POST["role"]);
+            MainController::viewPage($root . './view/admin/listView.php');
+        } else {
+            MainController::viewPage($root . './view/admin/updateUserView.php');
+        }
+    } elseif ($_GET['action3'] === 'deleteUser') {
+        if (isset($_GET['id_user'])) {
+            $id = $_GET['id_user'];
+            $results = new Database('abi');
+            $results->deleteUser($id);
+        }
+        MainController::viewpage('./view/admin/deleteUserView.php');
     }
-                                
+}
 ?>
    </div>         
 

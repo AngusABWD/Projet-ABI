@@ -20,8 +20,5 @@ class UserSearchController
     {
         $results= new Database('abi');
         return $results->showUser($value);
-    }
-    
-   
+    }  
 }
-?>

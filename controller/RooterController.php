@@ -58,7 +58,8 @@ if (isset($_GET['action'])) {
                {
                   DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
                }
-               elseif(!empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
+               elseif(
+                   !empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
                      !empty($_POST['email'])&&!empty($_POST['password'])&&!empty($_POST['role']))
                {
                   $pass= htmlentities($_POST['password']);
@@ -69,8 +70,25 @@ if (isset($_GET['action'])) {
                                              $pass,
                                              htmlentities($_POST['role']));
                }
-              
-               else
+               if(isset($_POST['emailLog'])&& isset($_POST['passwordLog']))
+               {
+                  DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
+               }
+               elseif (
+                !empty($_POST['first_name']) && !empty($_POST['last_name']) &&
+                !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['role'])
+            ) {
+                $pass = htmlentities($_POST['password']);
+                $pass = password_hash($pass, PASSWORD_DEFAULT);
+                // Kevin
+                DashboardController::updateUserDashboard(
+                    htmlentities($_POST['id_user']),
+                    htmlentities($_POST['first_name']),
+                    htmlentities($_POST['last_name']),
+                    htmlentities($_POST['email']),
+                    htmlentities($_POST['role'])
+                );
+            } else
                {
                MainController::viewPage('./view/admin/dashboardView.php');
                }
