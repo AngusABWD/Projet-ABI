@@ -13,7 +13,7 @@
                     <div class="col-md-8 col-12 text-center py-4 px-4">
                         <h2 class="titre-section text-center">BIENVENUE A ACTIVE BRETAGNE INFORMATIQUE</h2>
                         <p class="paragraph-section text-center">
-                        Créée en 2022, Active Bretagne Informatique est une société de prestations en services d’ingénierie informatique, privilégiant une relation de confiance, de complémentarité et de durabilité avec ses clients. Nos métiers c’est étudier vos attentes, vous conseiller, créer & développer vos solutions, vous assister, ce sont autant de compétences que Active Bretagne met à votre disposition pour vous fournir les meilleurs produits et services dans le domaine des technologies de l’information et de la communication. Notre société est spécialisée dans les projets au forfait mais aussi à de la prestation en régie, elle intervient essentiellement en région Bretagne et sa clientèle principale est la pme/pmi spécialisée en agro-alimentaire. Nous proposons des produits qui soient d’avant-garde et adaptés aux besoins de nos clients. Notre culture d’entreprise se caractérise par un partage de nos valeurs au quotidien au sein des équipes et avec nos clients. Nos professionnels constituent une valeur forte de notre entreprise. Ils possèdent une double compétence, technique et métier et sont force de propositions en adoptant une démarche proactive. 
+                        Créée en 2022, Active Bretagne Informatique est une société de prestations en services d’ingénierie informatique, privilégiant une relation de confiance, de complémentarité et de durabilité avec ses clients.
                         </p>
                     </div>
                     <div class="col-md-2">
@@ -26,20 +26,17 @@
                     <div class="col-12 col-md-6 mx-0 px-0">
                     <img class="" alt="Image à trouver" src="./public/IMG/Entreprise_responsableDef.png" width="100%">
                     </div>
-                    <div class="col-12 col-md-6 text-center p-4">
-                        <h3 class="titre-rejoindre">Titre présentation 2 à créer</h3>
+                    <div class="phrase col-12 col-md-6 text-center p-2">
                         <p class="paragraphe-rejoindre">
-                           présentation 2 à créer
+                        Nos métiers c’est étudier vos attentes, vous conseiller, créer & développer vos solutions, vous assister, ce sont autant de compétences que Active Bretagne met à votre disposition pour vous fournir les meilleurs produits et services dans le domaine des technologies de l’information et de la communication. Notre société est spécialisée dans les projets au forfait mais aussi à de la prestation en régie, elle intervient essentiellement en région Bretagne et sa clientèle principale est la pme/pmi spécialisée en agro-alimentaire. 
                         </p>
                     </div>
 
                 </div>
                 <div class="row rejoindre px-0 mx-0">
-                    <div class="col-12 col-md-6 text-center p-4">
-                        <h3 class="titre-rejoindre">Titre présentation 3 à créer</h3>
-                        <p class="paragraphe-rejoindre">
-                        présentation 3 à créer
-                        
+                    <div class="phrase col-12 col-md-6 text-center p-2">
+                        <p class="paragraphe-rejoindre fs-6">
+                        Nous proposons des produits qui soient d’avant-garde et adaptés aux besoins de nos clients. Notre culture d’entreprise se caractérise par un partage de nos valeurs au quotidien au sein des équipes et avec nos clients. Nos professionnels constituent une valeur forte de notre entreprise. Ils possèdent une double compétence, technique et métier et sont force de propositions en adoptant une démarche proactive.
                     </div>
                     <div class="col-12 col-md-6 mx-0 px-0">
                         <img class="" alt="Image à trouver" src="./public/IMG/dev.jpg" width="100%">

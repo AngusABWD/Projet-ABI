@@ -13,7 +13,7 @@ body{
 
 section
 {
-    background:  #B08569;
+    background:  #B08968;
     min-height: 800px;
 }
 footer
@@ -32,11 +32,11 @@ height: 5em;
 
 .footer-link a
 {
-    color: #B08569;
+    color: #EDC4B3;
 }
 .navbar-item a
 {
-    color: #EDC4B3;
+    color: #8A5A44;
     font-weight: bold;
     
 }
@@ -64,6 +64,7 @@ height: 5em;
 {
     box-shadow: 2px 1px 5px #787879;
     border-radius: 5px;
+    background-color: #9C6644;
 }
 table
 {
@@ -76,12 +77,12 @@ table th{
 }
 h3
 {
-    color: #E6B8A2;
+    color: black;
     
 }
 label
 {
-    color: #EDC4B3;
+    color: #9D6B53;
     font-weight: 600;
 }
 label:hover{
