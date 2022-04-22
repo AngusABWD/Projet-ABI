@@ -13,17 +13,22 @@ a{
     text-decoration: none;
     text-transform: uppercase;
 }
-header, section{
+section{
     background-color: #E6CCB2;
 }
+
+header {
+    background-color: #E6CCB2;
+}
+
 .socialNetwork
 {
-    background-color: #DDB892;
+    background-color: #E6CCB2;
     max-height: 40px;
 }
 .fab
 {
-    color: #fff;
+    color: #E6CCB2;
 }
 .socialNetwork ul li{
    
@@ -38,7 +43,7 @@ header, section{
 .logo
 {
     max-height: 200px;
-    background-color: #fff;
+    background-color: #E6CCB2;
 }
 .slogan
 {
@@ -125,7 +130,7 @@ footer
 }
 .footer-link a
 {
-    color: #B08569;
+    color: #EDC4B3;
 }
 .connexion
 {
@@ -147,6 +152,7 @@ p{
     background-image: url('./public/IMG/Image_a_ajouter');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #DDB892;
 }
 
 .formulaire
@@ -228,3 +234,8 @@ input:focus{
     width: 600px;
     text-align: left;
 } 
+
+.phrase {
+    background-color: #E6CCB2;
+    color: black; 
+}

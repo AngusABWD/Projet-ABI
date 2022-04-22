@@ -15,11 +15,15 @@
         <header class="container px-0 mt-3">
             <div class="row logo mx-0 d-flex align-items-center">
                 <div class="col p-4">
-                <a href="/index.php"><img alt="logo a ajouter" src="./public/IMG/screenshot.6979.jpg" class="img-fluid"></a>
+                <a href="/index.php"><img alt="logo a ajouter" src="./public/IMG/ABI.png" class="img-fluid"></a>
+                    
+                </div>
+                <div class="col p-4">
+                <a href="/index.php"><img alt="la bretagne" src="./public/IMG/drapeau.png" class="drapeau"></a>
                     
                 </div>
                 <div class="col mt-4 pt-4 text-left d-md-block d-none">
-                    <h4 class="slogan"> L'INSPIRATION N’A PLUS DE FREINS....</h4>
+                    <h4 class="slogan"><img alt="slogan" src="./public/IMG/slogan.png" class="img-fluid"></h4>
                 </div>
                 <!-- menu burger-->
                 <div class="col-2 d-md-none d-block dropdown dropleft">
