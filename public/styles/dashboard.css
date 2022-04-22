@@ -50,11 +50,11 @@ footer
 }
 
 .img_footer {
-    height: 50%;
+    height: 5em;
 }
 
 .pousse {
-height: 50%;
+height: 5em;
 }
 
 .gestion
@@ -136,13 +136,4 @@ table th{
 
 .icone {
     height: 15px;
-}
-
-.col {
-    
-}
-
-.cadre {
-    color : #8fce4e;
-    background-color: #9C6644;
 }
