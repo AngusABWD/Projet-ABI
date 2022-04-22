@@ -71,7 +71,32 @@ class DashboardController
        
         return $result;
     }
+     /**
+     * updateUserDashboard
+     *Kevin
+     * @param  mixed $first_name
+     * @param  mixed $last_name
+     * @param  mixed $email
+     * @param  mixed $password
+     * @param  mixed $role
+     * @return void
+     */
+    public static function updateUserDashboard($id_user, $first_name, $last_name, $email, $role)
+    {
+        $results = new Database('abi');
+        $result = $results->updateUser($id_user, $first_name, $last_name, $email, $role);
+        header('Location:./index.php?action=dashboard&successUpdate=true');
+
+        return $result;
+    }
+
+    public static function deleteUserDashboard($id)
+    {
+        $results = new Database('abi');
+        $result = $results->deleteUser($id);
+        header('Location:./index.php?action=dashboard&successSupp=true');
+        return $result;
+    }
     
    
 }
-?>
