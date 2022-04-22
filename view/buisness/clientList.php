@@ -45,7 +45,7 @@ $results=AdminController::viewClients();
                 <td class="col-2"><?= $result[5] ?></td>
                 
              
-                <td class="col-2 text-center"><a href="./index.php?action=buisness&action2=clientList&action2=detailClient<?= $result[0] ?>"><i class="fas fa-info-circle"></i></a></td>
+                <td class="col-2 text-center"><a href="./index.php?action=buisness&action2=clientList&action2=detailClient<?= $result[0] ?>"><img src="./public/IMG/Logo-plus.png" width="40px" height="40px"></a></td>
 
             
 
