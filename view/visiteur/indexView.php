@@ -11,7 +11,7 @@
 
                     </div>
                     <div class="col-md-8 col-12 text-center py-4 px-4">
-                        <h2 class="titre-section text-center">BIENVENUE A ACTIVE BRETAGNE INFORMATIQUE</h2>
+                        <h2 class="titre-section text-center">BIENVENUE A<br> ACTIVE BRETAGNE INFORMATIQUE</h2>
                         <p class="paragraph-section text-center">
                         Créée en 2022, Active Bretagne Informatique est une société de prestations en services d’ingénierie informatique, privilégiant une relation de confiance, de complémentarité et de durabilité avec ses clients.
                         </p>
