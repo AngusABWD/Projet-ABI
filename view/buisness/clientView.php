@@ -10,17 +10,35 @@ use \ABI\MainController\MainController;
         </div>
     <?php endif?>
 
-<?php
+    <?php
                     if(isset($_GET['successAdd']))
                     {
                 ?>
-                    <div class="alert alert-success mt-4">
-                           Client ajouté avec succés!
+                    <div class="alert alert-success">
+                        Client ajouté avec succès!
 
                     </div>
                 <?php
                     }
+                
+                    if(isset($_GET['successSupp']))
+                    {
                 ?>
+                        <div class="alert alert-success">
+                        Client effacé avec succès!
+                        </div>
+                <?php
+                    }
+                    if(isset($_GET['successUpdate']))
+                    {
+                ?>
+                    <div class="alert alert-success">
+                        Client modifié avec succès!
+
+                    </div>
+                <?php
+                    }
+                    ?>
     <?php
 function strrevpos($instr, $needle)
 {

@@ -104,15 +104,22 @@ class Database
      * updateUser
      * Mis à jour de l'utilisateur
      * @param  mixed $id
+     * @param  mixed $first_name
+     * @param  mixed $last_name
+     * @param  mixed $email
+     * @param  mixed $password
      * @param  mixed $role
      * @return void
      */
-    public function updateUser(int $id, string $role)
+    public function updateUser(int $id, string $first_name, string $last_name, string $email, string $role)
     {
         try
         {
-            $req= $this->getPDO()->prepare('UPDATE utilisateur SET role= :role WHERE id_user=:id');
+            $req= $this->getPDO()->prepare('UPDATE utilisateur SET first_name= :first_name, last_name= :last_name, email= :email, role= :role WHERE id_user=:id');
             $req->bindValue(':id', $id, PDO::PARAM_INT);
+            $req->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+            $req->bindValue(':last_name', $last_name, PDO::PARAM_STR);
+            $req->bindValue(':email', $email, PDO::PARAM_STR);
             $req->bindValue(':role', $role, PDO::PARAM_STR);
             $req->execute();
         }

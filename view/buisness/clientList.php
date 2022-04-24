@@ -1,3 +1,4 @@
+<!-- Page pour afficher la liste des clients  -->
 <?php
 
 use ABI\MainController\AdminController;
@@ -8,7 +9,7 @@ $results=AdminController::viewClients();
 ?>
 <div class="row text-center p-4">
     <div class="col">
-        <h3>Liste des clients</h3>
+        <h3>Liste des client</h3>
 
     </div>
     

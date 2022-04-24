@@ -67,17 +67,17 @@ class DashboardController
     {
         $results= new Database('abi');
         $result=$results->addUser($first_name,$last_name,$email,$password,$role);
-        header('Location:./index.php?action=dashboard&successAdd=true');
+        header('Location: ./index.php?action=dashboard&successAdd=true');
        
         return $result;
     }
      /**
      * updateUserDashboard
-     *Kevin
+     *
+     * @param  mixed $id_user
      * @param  mixed $first_name
      * @param  mixed $last_name
      * @param  mixed $email
-     * @param  mixed $password
      * @param  mixed $role
      * @return void
      */
@@ -85,18 +85,18 @@ class DashboardController
     {
         $results = new Database('abi');
         $result = $results->updateUser($id_user, $first_name, $last_name, $email, $role);
-        header('Location:./index.php?action=dashboard&successUpdate=true');
-
-        return $result;
+        header('Location: ./index.php?action=dashboard&successUpdate=true&action3=modifyUser');
     }
-
+  /**
+     * deleteUserDashboard
+     *
+     * @param  mixed $id_user
+     * @return void
+     */
     public static function deleteUserDashboard($id)
     {
         $results = new Database('abi');
         $result = $results->deleteUser($id);
-        header('Location:./index.php?action=dashboard&successSupp=true');
-        return $result;
+        header('Location: ./index.php?action=dashboard&successSupp=true');
     }
-    
-   
 }

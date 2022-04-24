@@ -86,8 +86,59 @@ class Client extends Database
             die($e->getMessage());
         }
     }
+/**
+     * updateClient
+     * Ajout d'un client
+     * @param  mixed $id_secteur
+     * @param  mixed $raison_sociale
+     * @param  mixed $adresse
+     * @param  mixed $code_postale
+     * @param  mixed $ville
+     * @param  mixed $effectif
+     * @param  mixed $telephone
+     * @return void
+     */
 
- 
+       //  Function UpdateClient  qui permet  la modification du Client  dans la BDD  Patricio 
+    public function updateClient($id_client,$raison_sociale, $telephone,$adresse,$ville)
+    {
+        try
+        {
+            $req= parent::getPDO()->prepare("UPDATE clients SET  RAISONSOCIALE= :raison_sociale, TELEPHONECLIENT= :telephone, ADRESSECLIENT= :adresse, VILLECLIENT= :ville WHERE IDCLIENT= :id_client");
+                    $req->bindValue(':id_client',$id_client, PDO::PARAM_INT );  
+                    $req->bindValue(':raison_sociale',$raison_sociale, PDO::PARAM_STR);
+                    $req->bindValue(':telephone',$telephone, PDO::PARAM_INT );
+                    $req->bindValue(':adresse',$adresse, PDO::PARAM_STR );
+                    $req->bindValue(':ville',$ville, PDO::PARAM_STR );
+            $req->execute();
+        }
+        catch(Exception $e)
+        {
+            die($e->getMessage());
+        }
+    }
+ /**
+     * deleteClient
+     * Suppression de l'utilisateur
+     * @param  mixed $id
+     * @return void
+     */
+
+     //  Function UpdateClient  qui permet  la suppression  du Client  dans la BDD  Patricio 
+    public function deleteClient(int $id)
+    {
+        try
+        {
+            $req= $this->getPDO()->prepare('DELETE FROM clients WHERE IDCLIENT=:id');
+            $req->bindValue(':id', $id, PDO::PARAM_INT);
+            $req->execute();
+        }
+        catch(Exception $e)
+        {
+            die($e->getMessage());
+        }
+
+    } 
 }
 
 ?>

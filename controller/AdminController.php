@@ -28,12 +28,36 @@ class AdminController
         
     
     }
-    public static function modifierClient($raison_sociale, $telephone, $adresse, $ville){
+     /**
+     * updateClientAdmin
+     *
+     * @param  mixed $id_user
+     * @param  mixed $first_name
+     * @param  mixed $last_name
+     * @param  mixed $email
+     * @param  mixed $role
+     * @return void
+     */
+
+
+    //  Function Controller  pour la Modification / Suppression  d'un CLient  Patricio 
+    public static function updateClientAdmin($id_client, $raison_sociale, $telephone, $adresse, $ville)
+    {
         $results = new Client('abi');
-        
-
+        $result = $results->updateClient($id_client, $raison_sociale, $telephone, $adresse, $ville);
+        header('Location: ./index.php?action=buisness&successUpdate=true&action2=clientList');
     }
-
+  /**
+     * deleteClientAdmin
+     * @param  mixed $id_user
+     * @return void
+     */
+    public static function deleteClientAdmin($id)
+    {
+        $results = new Client('abi');
+        $result = $results->deleteClient($id);
+        header('Location: ./index.php?action=buisness&successSupp=true&action2=clientList');
+    }
 
     /**
      * addClientAdmin
@@ -81,5 +105,3 @@ class AdminController
         
     }        
 }
-
-?>

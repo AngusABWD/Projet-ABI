@@ -46,8 +46,5 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-success">Valider</button>
                 </div>
-
-                
-
             </form>
        </div>

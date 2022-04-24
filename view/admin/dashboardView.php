@@ -13,7 +13,6 @@ $title='Tableau de bord';
 AuthController::checkRoleAdmin();
 $first_name=$_SESSION['first_name'];
 $last_name=$_SESSION['last_name'];
-
 ob_start(); 
 ?>
 <link rel="stylesheet" href="./public/styles/dashboard.css">
@@ -47,7 +46,6 @@ ob_start();
                 ?>
                         <div class="alert alert-success">
                         Utilisateur effacé avec succès!
-
                         </div>
                 <?php
                     }
@@ -97,17 +95,7 @@ ob_start();
                
         </div>
 
-        <div class="col">
-        <ul class="nav nav flex-column">
-            <li class="nav-item">
-                <a href="./index.php?action=dashboard&amp;action3=deleteUser"  class="nav-link"><img src="./public/IMG/supprimer.png" alt="Image supprimer utilisateurs à créer" class="icone"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./index.php?action=dashboard&amp;action3=deleteUser">Supprimer un utilisateur</a>
-            </li>
-        </ul>
-
-    </div>
+      
 </div>
 
 
@@ -120,27 +108,13 @@ if (isset($_GET['action3'])) {
     } elseif ($_GET['action3'] === 'addUser') {
         MainController::viewpage('./view/admin/addUserView.php');
 
+         //  Gestion de la view à afficher si l'action 3 =  Update User  Kevin
     } elseif ($_GET['action3'] === 'modifyUser') {
         MainController::viewpage('./view/admin/modifyUserView.php');
 
-    } elseif ($_GET['action3'] === 'updateUser') {
-        if (isset($_POST["id_user"])) {
-            $id = $_GET['id_user'];
-            $result = new Database('abi');
-            $result = $data->updateUser($_POST["id_user"], $_POST["first_name"], $_POST["last_name"], $_POST["email"], $_POST["role"]);
-            MainController::viewPage($root . './view/admin/listView.php');
-        } else {
-            MainController::viewPage($root . './view/admin/updateUserView.php');
-        }
-    } elseif ($_GET['action3'] === 'deleteUser') {
-        if (isset($_GET['id_user'])) {
-            $id = $_GET['id_user'];
-            $results = new Database('abi');
-            $results->deleteUser($id);
-        }
-        MainController::viewpage('./view/admin/deleteUserView.php');
-    }
+    } 
 }
+
 ?>
    </div>         
 
