@@ -28,13 +28,13 @@
             </div>
             <div class='col p-4'>         
                 <ul class="nav flex-column text-center">
-                    <li><a class="" href="gestion_rh.php"><img src="./public/IMG/rh.png" alt="Image menu gestion RH a créer" class="gestion"></a></li>
+                    <li><a class="" href="#"><img src="./public/IMG/rh.png" alt="Image menu gestion RH a créer" class="gestion"></a></li>
                     <li><a href='#' class="nav-link">Gestion RH</a></li> 
                     </ul>
                 </div>
                 <div class="col p-4">
                 <ul class="nav flex-column text-center">
-                    <li><a class="" href="gestion_projets.php"><img src="./public/IMG/folder.png" alt="Image menu gestion des projets a créer"class="gestion"></a></li>
+                    <li><a class="" href="#"><img src="./public/IMG/folder.png" alt="Image menu gestion des projets a créer"class="gestion"></a></li>
                     <li><a href="#" class="nav-link">Gestion des projets</a></li> 
                 </ul>
             </div>

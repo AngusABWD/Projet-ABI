@@ -3,6 +3,7 @@
 
 use ABI\MainController\MainController;
 use \ABI\MainController\AuthController;
+use ABI\model\Database;
 
 
 
@@ -12,14 +13,13 @@ $title='Tableau de bord';
 AuthController::checkRoleAdmin();
 $first_name=$_SESSION['first_name'];
 $last_name=$_SESSION['last_name'];
-
 ob_start(); 
 ?>
 <link rel="stylesheet" href="./public/styles/dashboard.css">
 <hr class="py-0 my-0">
 <div class='row p-2 bonjour mx-0'>
         <div class='col'>
-        <div class="p-3 alert alert-success">Vous étes connecté en tant que <?= strtoupper($first_name).' '.strtoupper($last_name); ?></div>
+        <div class="p-3 alert cadre">Vous êtes connecté en tant que <?= strtoupper($first_name).' '.strtoupper($last_name); ?></div>
 
         </div>
         <div class="col text-right">
@@ -35,12 +35,30 @@ ob_start();
                     {
                 ?>
                     <div class="alert alert-success">
-                           Utilisateur ajouté avec succés!
+                        Utilisateur ajouté avec succès!
 
                     </div>
                 <?php
                     }
+                
+                    if(isset($_GET['successSupp']))
+                    {
                 ?>
+                        <div class="alert alert-success">
+                        Utilisateur effacé avec succès!
+                        </div>
+                <?php
+                    }
+                    if(isset($_GET['successUpdate']))
+                    {
+                ?>
+                    <div class="alert alert-success">
+                        Utilisateur modifié avec succès!
+
+                    </div>
+                <?php
+                    }
+                    ?>
 
 <div class="row modif text-center mb-4">
         <div class="col">
@@ -76,43 +94,27 @@ ob_start();
             </ul>
                
         </div>
-        <div class="col">
-            <ul class="nav nav flex-column">
-              <li class="nav-item">
-                  <a href="./index.php?action=dashboardList" class="nav-link"><img src="./public/IMG/supprimer.png" alt="Image supprimer utilisateurs à créer" class="icone"></a>
-                </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="./index.php?action=dashboardList">Supprimer un utilisateur</a>
-                </li>   
-            </ul>
-               
-        </div>
+
+      
 </div>
 
 
-<?php 
-    if(isset($_GET['action3']))
-    {
+<?php
+if (isset($_GET['action3'])) {
 
-                    if($_GET['action3']==='dashboardList')
-                    {
-                        MainController::viewpage('./view/admin/listView.php');
-                    }
-                            
-                
-                    elseif($_GET['action3']==='addUser')
-                    {
-                        MainController::viewpage('./view/admin/addUserView.php');
-                                
-                    }
-                    elseif($_GET['action3']==='modifyUser')
-                    {
-                        MainController::viewpage('./view/admin/modifyUserView.php');
-                                
-                    }
-                                            
-    }
-                                
+    if ($_GET['action3'] === 'dashboardList') {
+        MainController::viewpage('./view/admin/listView.php');
+
+    } elseif ($_GET['action3'] === 'addUser') {
+        MainController::viewpage('./view/admin/addUserView.php');
+
+         //  Gestion de la view à afficher si l'action 3 =  Update User  Kevin
+    } elseif ($_GET['action3'] === 'modifyUser') {
+        MainController::viewpage('./view/admin/modifyUserView.php');
+
+    } 
+}
+
 ?>
    </div>         
 

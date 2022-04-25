@@ -35,8 +35,3 @@ class ClientSearchController
     
     
 }
-
-
-
-
-?>

@@ -1,37 +1,42 @@
 body{
     box-sizing: border-box;
-    background: url('../IMG/background.jpg') no-repeat;
+    background: url("../IMG/bg.jpg") no-repeat;
     background-size: cover;
     text-decoration: none;
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    background-color: #EDE0D4;
-   
-   
 
 }
 
 
+
 section
 {
-    background:  #B08569;
+    background:  #B08968;
     min-height: 800px;
 }
 footer
 {
     background-color: #774936;
     text-align: center;
-
-
 }
+
+.img_footer {
+    height: 5em;
+}
+
+.pousse {
+height: 5em;
+}
+
 .footer-link a
 {
-    color: black;
+    color: #EDC4B3;
 }
 .navbar-item a
 {
-    color: #004279;
+    color: #8A5A44;
     font-weight: bold;
     
 }
@@ -59,6 +64,7 @@ footer
 {
     box-shadow: 2px 1px 5px #787879;
     border-radius: 5px;
+    background-color: #9C6644;
 }
 table
 {
@@ -71,12 +77,12 @@ table th{
 }
 h3
 {
-    color: #E6B8A2;
+    color: black;
     
 }
 label
 {
-    color: #004279;
+    color: #9D6B53;
     font-weight: 600;
 }
 label:hover{
@@ -84,4 +90,15 @@ label:hover{
     transform: translateX(3px);
     transition: .2s ease;
 
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cadre {
+    color : #8fce4e;
+    background-color: #9C6644;
 }

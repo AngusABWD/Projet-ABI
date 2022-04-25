@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 body{
     box-sizing: border-box;
-    background: url('../IMG/background.jpg') no-repeat;
+    background: url("../IMG/bg.jpg") no-repeat;
     background-size: cover;
     text-decoration: none;
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    background: linear-gradient(#E6CCB2, 30%, #c29c76);
    
    
 
@@ -20,7 +19,7 @@ header
 }
 .bonjour a:hover
 {
-    color: #E6B8A2 !important;
+    color: #8A5A44 !important;
     transform: translateX(3px) !important;
     transition: .2s ease !important;
 }
@@ -46,8 +45,17 @@ footer
 }
 .footer-link a
 {
-    color: black;
+    color: #EDC4B3;
 }
+
+.img_footer {
+    height: 5em;
+}
+
+.pousse {
+height: 5em;
+}
+
 .gestion
 {
   
@@ -63,7 +71,7 @@ header a
 }
 header a:hover
 {
-    color: #9C6644 !important;
+    color: #8A5A44 !important;
     transform: translateX(3px) !important;
     transition: .2s ease !important;
     
@@ -104,7 +112,7 @@ section
     transition: .2s ease;
 }
 .modif a:hover{
-    color: #9C6644 ;
+    color: #8A5A44 ;
     transform: translateX(3px);
     transition: .2s ease;
 

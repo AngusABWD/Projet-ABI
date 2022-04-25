@@ -10,7 +10,6 @@ require('./controller/DashboardController.php');
 
 if (isset($_GET['action'])) {
 
-
         if ($_GET['action']=='home')
         {
             $headerActive = 'home';
@@ -58,7 +57,8 @@ if (isset($_GET['action'])) {
                {
                   DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
                }
-               elseif(!empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
+               elseif(
+                   !empty($_POST['first_name'])&&!empty($_POST['last_name'])&&
                      !empty($_POST['email'])&&!empty($_POST['password'])&&!empty($_POST['role']))
                {
                   $pass= htmlentities($_POST['password']);
@@ -69,8 +69,27 @@ if (isset($_GET['action'])) {
                                              $pass,
                                              htmlentities($_POST['role']));
                }
-              
-               else
+               if(isset($_POST['emailLog']) && isset($_POST['passwordLog']))
+               {
+                  DashboardController::checkUser(htmlentities($_POST['emailLog']),htmlentities($_POST['passwordLog']));
+               }
+                // Controller Modification et Suppresion des utilisateurs Kevin
+               elseif (isset($_POST['modifyUser']) && !empty($_POST['id_user']) && !empty($_POST['first_name']) && !empty($_POST['last_name']) &&
+                !empty($_POST['email']) && !empty($_POST['role'])
+            ) {
+                DashboardController::updateUserDashboard(
+                    htmlentities($_POST['id_user']),
+                    htmlentities($_POST['first_name']),
+                    htmlentities($_POST['last_name']),
+                    htmlentities($_POST['email']),
+                    htmlentities($_POST['role'])
+                );
+            } elseif (isset($_POST['deleteUser']) && !empty($_POST['id_user'])) {
+                DashboardController::deleteUserDashboard(
+                    htmlentities($_POST['id_user'])
+                );
+            }
+            else
                {
                MainController::viewPage('./view/admin/dashboardView.php');
                }
@@ -93,6 +112,16 @@ if (isset($_GET['action'])) {
                                              htmlentities($_POST['ville']),
                                              htmlentities($_POST['effectif']),
                                              htmlentities($_POST['telephone']));
+
+            // Controller Modification et Suppresion des utilisateurs Patricio                 
+            } elseif (isset($_POST['modifyClient']) && !empty($_POST['id_client'])&&!empty($_POST['raison_sociale'])&&!empty($_POST['adresse'])&&!empty($_POST['ville'])&&!empty($_POST['telephone'])) {
+                AdminController::updateClientAdmin(  htmlentities($_POST['id_client']),
+                    htmlentities($_POST['raison_sociale']),
+                    htmlentities($_POST['telephone']),
+                    htmlentities($_POST['adresse']),
+                    htmlentities($_POST['ville']),);
+            }elseif (isset($_POST['deleteClient']) && !empty($_POST['id_client'])) {
+                AdminController::deleteClientAdmin( htmlentities($_POST['id_client']));
             }
             else
             {
@@ -102,10 +131,11 @@ if (isset($_GET['action'])) {
           
         else
         {
-        
-           MainController::viewPage('./view/visiteur/indexView.php');
+            $headerActive = 'home';
+            MainController::viewPage('./view/visiteur/indexView.php');
         }
 
     } else {
+        $headerActive = 'home';
         MainController::viewPage('./view/visiteur/indexView.php');
     }
